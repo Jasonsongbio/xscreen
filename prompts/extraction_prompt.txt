@@ -1,0 +1,66 @@
+You are a neurobiology research assistant. Extract structured evidence from the following paper about neuromodulator involvement in starvation-induced behaviors.
+
+PAPER TITLE: {title}
+PAPER TEXT (may be abstract or full text excerpt):
+{abstract}
+
+FOCUS TOPIC: {topic}
+FOCUS BEHAVIOR: {behavior}
+TARGET ENTITY TYPE: {entity_type}
+
+For each molecule mentioned in the paper that is relevant to the focus topic and behavior, extract one evidence entry. Use exactly these fields per entry:
+
+- candidate: molecule name AS IT APPEARS in the paper (e.g., "dNPF", "neuropeptide F", "NPF1a")
+- core_name: normalized canonical name for cross-paper aggregation. Prefer the MASTER LIST canonical full name over ad-hoc abbreviations (e.g., output "Allatotropin" not "AT"; "SIFamide" not "SIFa"; "Tachykinin" not "DTK"). Map variants: "dNPF"/"DmelNPF"/"neuropeptide F" -> "NPF"; "myoinhibitory peptide" -> "MIP"; "drosulfakinin"/"DSK" -> "sulfakinin"; "Mas-allatotropin"/"allatotropin-like" -> "Allatotropin"; "FMRFa" -> "FMRFamide". When unsure, use the candidate name as-is.
+- **Species-aware naming (CRITICAL):** core_name must match the EXPERIMENTAL species in the paper, not the target species. "NPF1a" is a LOCUST-specific gene name — only use "NPF1a" when the experiment is in Locusta migratoria or a close locust/grasshopper species. In Drosophila, always use "NPF" (never "NPF1a"). Mismatched species-naming creates false candidate splits.
+- candidate_type: exactly one of:
+    * "neuropeptide"        - NPF, sNPF, AKH, AT, DH, etc.
+    * "biogenic_amine"      - octopamine, dopamine, serotonin, tyramine, histamine
+    * "peptide_hormone"     - ILP, insulin-like peptides
+    * "neurotransmitter"    - GABA, glutamate, acetylcholine
+    * "other"               - NO (gas), lipid signals, etc.
+- species: experimental species Latin name
+- evidence_level: exactly one of:
+    * "transcript"  - mRNA / gene expression (qPCR, RNA-seq, in situ hybridization, Northern, "gene X is expressed")
+    * "peptide"     - direct peptide/protein detection (mass spec, ELISA, Western, immunostaining) — NOT gene expression
+    * "release"     - secretion OR neural activity (microdialysis, biosensor, calcium imaging, GCaMP)
+    * "functional"  - manipulation (RNAi, CRISPR, mutant, Gal4/UAS, agonist/antagonist drug, neuron ablation/silencing)
+- direction: "up" | "down" | "mixed" | "unchanged"
+- behavior_effect: effect on behavior if tested, else null. Include drug name if pharmacology.
+- expression_location: brain region or neuron type if stated (e.g., "IPC neurons", "mushroom body", "fan-shaped body"). Else null.
+- quote: direct quote supporting this evidence (max 200 characters)
+- confidence: your confidence 0.0-1.0
+
+Rules:
+- **Transcript vs peptide boundary:** "gene X is expressed", "X mRNA", "transcript of X", "expression of X" -> transcript. These are mRNA-level readouts even when the paper states a tissue location (e.g., "expressed in the corpora cardiaca"). Peptide level requires direct detection of the peptide/protein molecule itself (immunostaining, Western, mass spec, ELISA).
+- For immunostaining alone (only showing peptide distribution), create one "peptide" entry with expression_location filled.
+- For immunostaining combined with a functional experiment, create TWO entries: one peptide (distribution) and one functional (manipulation).
+- Pharmacological results (agonist/antagonist drugs) count as functional; record drug name in behavior_effect.
+- Calcium imaging / GCaMP counts as release (reflects neural activity).
+- If confidence < 0.3, skip the entry entirely.
+- If the same candidate has multiple evidence types in one paper, create separate entries per type.
+- Do not invent evidence not present in the text.
+- **Do NOT extract receptors, enzymes, or drugs as candidates.** Skip entries like "NPF receptor", "AKHR", "D2-like receptor", "neprilysin", "flupenthixol". Only extract the signaling molecule (ligand) itself.
+- **Do NOT extract non-signaling molecules.** Skip juvenile hormone (JH, lipid hormone), ecdysone (steroid), trehalose (sugar), ATP, cAMP — these are not neuropeptides/amines/peptide hormones.
+- **CRITICAL — no example leakage:** The example below shows JSON FORMAT only. Do NOT copy any candidate name, quote, or value from the example into your answer. Every quote must be a verbatim sentence copied from the PAPER TEXT above (between the "PAPER TEXT" markers) — never from the example. If a paper is a review with no original experiment, return [] rather than copying example content.
+- If no relevant evidence, return empty array [].
+
+Return a JSON array. No text outside the array.
+
+Example (FORMAT ONLY — do not copy these values):
+[
+  {
+    "candidate": "<molecule name as in paper>",
+    "core_name": "<canonical name>",
+    "candidate_type": "neuropeptide",
+    "species": "Drosophila melanogaster",
+    "evidence_level": "functional",
+    "direction": "down",
+    "behavior_effect": "<effect on behavior or null>",
+    "expression_location": "<brain region or null>",
+    "quote": "<exact sentence copied from PAPER TEXT above>",
+    "confidence": 0.9
+  }
+]
+
+Now extract evidence from the paper above. Return only the JSON array.

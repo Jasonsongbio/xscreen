@@ -1,0 +1,76 @@
+# 真实文献运行配置：用主论文 01_core 的 48 篇参考文献跑完整 pipeline
+#
+# 用途：
+#   - 验证 xscreen 在真实文献规模下的候选覆盖面
+#   - 生成 Supplementary Table SX 初稿（candidates_ranked.xlsx）
+#   - 对比 DeepSeek 提取 vs 已知饥饿行为神经肽（NPF/AKH/sNPF/octopamine/dopamine）
+#
+# 运行：
+#   python src/run.py cases/locust_sih/config_real.yaml
+#   python -m tools.qa_check cases/locust_sih/config_real.yaml
+
+study:
+  topic: "starvation-induced hyperactivity"
+  target_species: "Locusta migratoria"
+  reference_species:
+    - "Drosophila melanogaster"
+  entity_type: "neuropeptide"
+  behavior: "locomotor"
+  master_list: "cases/locust_sih/neuropeptide_master_list.md"   # core_name 规范化主表
+
+search:
+  pdf_dir: "/home/ug1708/workspace/Brain/ms_writing/npf/references/01_core"
+  use_pubmed: false
+  date_range: [2000, 2026]
+  max_results: 100
+
+screening:
+  enabled: true
+  threshold: "peripheral"      # keep peripheral+ ; only auto-exclude unrelated
+  max_abstract_chars: 2000
+  prompt_file: "prompts/screening_prompt.txt"
+
+extraction:
+  llm:
+    provider: "deepseek"
+    model: "deepseek-chat"
+    api_key_env: "DEEPSEEK_API_KEY"
+  prompt_file: "prompts/extraction_prompt.txt"
+  prompt_file_review: "prompts/extraction_prompt_review.txt"
+  evidence_levels:
+    - transcript
+    - peptide
+    - release
+    - functional
+  weights:
+    transcript: 1
+    peptide: 2
+    release: 3
+    functional: 4
+    review_mention: 0.25   # review enumeration path; below transcript so primary evidence dominates
+  max_tokens: 4096
+  temperature: 0.0
+
+homolog:
+  method: "BLAST"
+  database: "UniProt"
+  min_identity: 0.4
+  min_coverage: 0.5
+  require_ortholog: false
+
+scoring:
+  min_studies: 2        # 真实标准：要求跨论文一致性
+  weight_convergence: 0.5
+  weight_level: 0.5
+  top_n: 30
+  type_filter:
+    enabled: true   # 杠杆 2：过滤 receptor/enzyme/drug/metabolite/noise，保留信号分子
+  normalization:
+    enabled: true   # core_name 规范化（合并 AT/allatotropin、FMRFa/FMRFamide 等同义词）
+
+output:
+  dir: "output_real"
+  table: "candidates_ranked.xlsx"
+  evidence_detail: "evidence_detail.xlsx"
+  database: "evidence_db.json"
+  report: "report.md"

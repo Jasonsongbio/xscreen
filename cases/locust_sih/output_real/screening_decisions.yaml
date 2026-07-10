@@ -1,0 +1,462 @@
+# Literature screening decisions.
+# Edit the 'decision' field to override defaults.
+# Valid values: include | exclude
+# Default threshold: keep peripheral and above.
+# Papers without an explicit 'decision' default to 'include'.
+
+- paper_id: P001
+  title: Short neuropeptide F in integrated insect physiology
+  relevance: peripheral
+  species: insect
+  paper_type: review
+  reason: This is a review article summarizing sNPF functions in insects, including
+    feeding and locomotor activity, but does not present original experiments on starvation-induced
+    hyperactivity.
+  default_decision: include
+  decision: include
+- paper_id: P002
+  title: Neuropeptides associated with the regulation of feeding in insects
+  relevance: relevant
+  species: insect
+  paper_type: review
+  reason: This review surveys insect neuropeptides that modulate feeding and gut motility,
+    but does not present original experiments on starvation-induced hyperactivity
+    or locomotor behavior.
+  default_decision: include
+  decision: include
+- paper_id: P003
+  title: Nutritional state-dependent modulation of insulin-producing cells in drosophila
+  relevance: relevant
+  species: insect
+  paper_type: primary
+  reason: The paper studies Drosophila insulin-producing cells and their modulation
+    by nutritional state, including effects on locomotor activity, but does not directly
+    manipulate a neuropeptide to test starvation-induced hyperactivity.
+  default_decision: include
+  decision: include
+- paper_id: P004
+  title: Energy-dependent modulation of glucagon-like signaling in drosophila via
+    the AMP-activated protein k
+  relevance: core
+  species: insect
+  paper_type: primary
+  reason: Directly tests how AMPK modulates AKH (glucagon-like) neuropeptide secretion
+    and its effect on starvation-induced hyperactivity in Drosophila.
+  default_decision: include
+  decision: include
+- paper_id: P005
+  title: RNA-binding protein syncrip regulates starvation-induced hyperactivity in
+    adult drosophila
+  relevance: relevant
+  species: insect
+  paper_type: primary
+  reason: The paper identifies genes associated with starvation-induced hyperactivity
+    in Drosophila via GWAS, but does not directly manipulate a neuropeptide to test
+    its role in this behavior.
+  default_decision: include
+  decision: include
+- paper_id: P007
+  title: Feeding state-dependent neuropeptidergic modulation of reciprocally interconnected
+    inhibitory neuron
+  relevance: relevant
+  species: insect
+  paper_type: primary
+  reason: The paper studies neuropeptide Y homologs modulating inhibitory neurons
+    in Drosophila, affecting sensorimotor decisions based on feeding state, but does
+    not directly measure starvation-induced hyperactivity or locomotor behavior.
+  default_decision: include
+  decision: include
+- paper_id: P008
+  title: Nutrient-dependent control of short neuropeptide F transcript levels via
+    components of the insulinI
+  relevance: relevant
+  species: insect
+  paper_type: primary
+  reason: The paper studies sNPF and insulin/IGF signaling in locusts, linking nutrient
+    levels to sNPF transcript levels, but does not measure starvation-induced hyperactivity
+    or locomotor behavior.
+  default_decision: include
+  decision: include
+- paper_id: P009
+  title: Regulation of feeding and metabolism by neuropeptide F and short neuropeptide
+    F in invertebrates
+  relevance: peripheral
+  species: other
+  paper_type: review
+  reason: This is a review article surveying NPF and short NPF systems in invertebrates,
+    discussing feeding and metabolism but not presenting original experiments on starvation-induced
+    hyperactivity or direct neuropeptide manipulation of locomotion.
+  default_decision: include
+  decision: include
+- paper_id: P010
+  title: Mode of action of neuropeptides from the adipokinetic hormone family
+  relevance: peripheral
+  species: insect
+  paper_type: review
+  reason: This is a minireview on AKH signaling in insects, covering signal transduction
+    and metabolism, but does not test starvation-induced hyperactivity or locomotor
+    behavior.
+  default_decision: include
+  decision: include
+- paper_id: P011
+  title: Hallier 等 - Drosophila neprilysins control insulin signaling a
+  relevance: peripheral
+  species: insect
+  paper_type: primary
+  reason: The paper studies Drosophila neprilysins regulating insulin-like peptides
+    and food intake, but does not test starvation-induced hyperactivity or locomotor
+    behavior.
+  default_decision: include
+  decision: include
+- paper_id: P012
+  title: Hou 等 - The neuropeptide Fnitric oxide pathway is essenti
+  relevance: relevant
+  species: insect
+  paper_type: primary
+  reason: The paper studies NPF/NO pathway regulating locomotor plasticity in locusts,
+    but focuses on phase transition rather than starvation-induced hyperactivity.
+  default_decision: include
+  decision: include
+- paper_id: P013
+  title: AKH-producing neuroendocrine cell ablation decreases trehalose and induces
+    behavioral changes in dro
+  relevance: relevant
+  species: insect
+  paper_type: primary
+  reason: The paper ablates AKH cells in Drosophila and measures trehalose levels
+    and locomotor activity, but does not directly test starvation-induced hyperactivity
+    as a primary outcome.
+  default_decision: include
+  decision: include
+- paper_id: P014
+  title: Neuromodulation of innate behaviors in drosophila
+  relevance: peripheral
+  species: insect
+  paper_type: review
+  reason: This is a review article surveying neuromodulation of innate behaviors in
+    Drosophila, including feeding and courtship, but does not present original experiments
+    on starvation-induced hyperactivity or direct neuropeptide manipulation of locomotor
+    behavior.
+  default_decision: include
+  decision: include
+- paper_id: P015
+  title: Hemolymph sugar homeostasis and starvation-induced hyperactivity affected
+    by genetic manipulations o
+  relevance: core
+  species: insect
+  paper_type: primary
+  reason: Original experiments using genetic manipulations of the Drosophila Akh gene
+    directly test how this neuropeptide regulates starvation-induced hyperactivity
+    (locomotor behavior).
+  default_decision: include
+  decision: include
+- paper_id: P016
+  title: Biological characteristics and energy metabolism of migrating insects
+  relevance: peripheral
+  species: insect
+  paper_type: review
+  reason: This is a review on insect migration energy metabolism, not original experiments
+    on neuropeptide regulation of starvation-induced hyperactivity.
+  default_decision: include
+  decision: include
+- paper_id: P017
+  title: Social bonding regulation by neuropeptides
+  relevance: peripheral
+  species: mammal
+  paper_type: review
+  reason: This is a review on oxytocin and vasopressin in mammalian social bonding,
+    with no connection to starvation-induced hyperactivity or locomotor behavior.
+  default_decision: include
+  decision: exclude  # override 2026-07-09: mammal + off-topic (social bonding)
+- paper_id: P018
+  title: A nutrient-specific gut hormone arbitrates between
+  relevance: relevant
+  species: insect
+  paper_type: primary
+  reason: The paper studies a gut neuropeptide (Dh31) in Drosophila that switches
+    behavior from feeding to courtship, but does not measure starvation-induced hyperactivity
+    or locomotor behavior.
+  default_decision: include
+  decision: include
+- paper_id: P019
+  title: Starvation physiology reviewing the different strategies animals use to survive
+    a common challenge
+  relevance: peripheral
+  species: other
+  paper_type: review
+  reason: This is a broad review of starvation physiology across animals, with no
+    original experiments on neuropeptide regulation of starvation-induced hyperactivity.
+  default_decision: include
+  decision: include
+- paper_id: P020
+  title: Mullen Goldsworthy - Changes in apolipophorin-III are related to the activation
+    of phenoloxidase in the haemolymph of loc
+  relevance: unrelated
+  species: insect
+  paper_type: primary
+  reason: The paper studies immune response (phenoloxidase activation) in locusts,
+    not starvation-induced hyperactivity or neuropeptide regulation of locomotion.
+  default_decision: exclude
+  decision: exclude
+- paper_id: P021
+  title: Modulation of motor behavior by dopamine and the D1-like dopamine receptor
+    AmDOP2 in the honey bee
+  relevance: peripheral
+  species: insect
+  paper_type: primary
+  reason: The paper studies dopamine and D1-like receptor AmDOP2 in honey bee motor
+    behavior, but does not address starvation-induced hyperactivity or neuropeptide
+    molecules.
+  default_decision: include
+  decision: include
+- paper_id: P022
+  title: The intrinsic nutrient sensing adipokinetic hormone producing cells function
+    in modulation of metabo
+  relevance: peripheral
+  species: insect
+  paper_type: review
+  reason: This is a review article on adipokinetic hormone producing cells (APCs)
+    and their role in metabolism, activity, and stress, but does not present original
+    experiments on starvation-induced hyperactivity or direct neuropeptide manipulation.
+  default_decision: include
+  decision: include
+- paper_id: P023
+  title: Drosophila neuropeptides in regulation of p
+  relevance: peripheral
+  species: insect
+  paper_type: review
+  reason: This is a review article summarizing sNPF physiology in insects, including
+    feeding and locomotor activity, but does not present original experiments on starvation-induced
+    hyperactivity.
+  default_decision: include
+  decision: include
+- paper_id: P024
+  title: Drosophila neuropeptides in regulation of physiology and behavior
+  relevance: peripheral
+  species: insect
+  paper_type: review
+  reason: This is a review article surveying Drosophila neuropeptides and their roles
+    in physiology and behavior, but it does not present original experiments on starvation-induced
+    hyperactivity.
+  default_decision: include
+  decision: include
+- paper_id: P025
+  title: From signals to sustenance the role of biogenic amines in insect feeding
+    behavior
+  relevance: peripheral
+  species: insect
+  paper_type: review
+  reason: This is a review article surveying biogenic amines in insect feeding behavior,
+    not original experiments on neuropeptide regulation of starvation-induced locomotor
+    activity.
+  default_decision: include
+  decision: include
+- paper_id: P026
+  title: Drosophila carboxypeptidase D (SILVER) is a key en
+  relevance: relevant
+  species: insect
+  paper_type: primary
+  reason: The paper studies Drosophila carboxypeptidase D (SILVER) in neuropeptide
+    processing and its effect on locomotor activity and survival, but does not specifically
+    test starvation-induced hyperactivity.
+  default_decision: include
+  decision: include
+- paper_id: P027
+  title: Endocrine signals fine-tune daily activity patterns in drosophila
+  relevance: relevant
+  species: insect
+  paper_type: primary
+  reason: The paper studies AKH neuropeptide regulation of locomotor activity in Drosophila,
+    but does not specifically test starvation-induced hyperactivity; it examines daily
+    activity patterns under non-starving conditions.
+  default_decision: include
+  decision: include
+- paper_id: P028
+  title: Failure to mate enhances investment in behaviors t
+  relevance: relevant
+  species: insect
+  paper_type: primary
+  reason: The paper studies Neuropeptide F receptor neurons in Drosophila, focusing
+    on mating failure and stress coping, not starvation-induced hyperactivity.
+  default_decision: include
+  decision: include
+- paper_id: P029
+  title: The multifaceted effects of starvation on arthropod behaviour
+  relevance: peripheral
+  species: other
+  paper_type: review
+  reason: This is a review of starvation effects on arthropod behavior, including
+    activity changes, but does not involve neuropeptide manipulation or original experiments.
+  default_decision: include
+  decision: include
+- paper_id: P030
+  title: Neuropeptides as regulators of behavior in insects
+  relevance: peripheral
+  species: insect
+  paper_type: review
+  reason: This is a review article surveying neuropeptide regulation of behavior in
+    insects, including feeding and locomotion, but does not present original experiments
+    on starvation-induced hyperactivity.
+  default_decision: include
+  decision: include
+- paper_id: P031
+  title: Dopamine and Octopamine Differentiate between Aver
+  relevance: unrelated
+  species: insect
+  paper_type: primary
+  reason: The paper studies dopamine and octopamine in olfactory memory formation
+    in Drosophila, not starvation-induced hyperactivity or neuropeptide regulation
+    of locomotion.
+  default_decision: exclude
+  decision: exclude
+- paper_id: P032
+  title: Histone methyltransferase G9a is a key regulator of the starvation-induced
+    behaviors in drosophila m
+  relevance: relevant
+  species: insect
+  paper_type: primary
+  reason: The paper studies dG9a, a histone methyltransferase, and its regulation
+    of starvation-induced hyperactivity and sugar sensitivity in Drosophila, but does
+    not directly manipulate a neuropeptide molecule.
+  default_decision: include
+  decision: include
+- paper_id: P033
+  title: Hunger-driven adaptive prioritization of behavior
+  relevance: peripheral
+  species: mammal
+  paper_type: review
+  reason: This is a review on hunger-driven behavioral prioritization in mammals,
+    focusing on AGRP neurons and neural circuits, not original experiments on starvation-induced
+    hyperactivity with neuropeptide manipulation.
+  default_decision: include
+  decision: exclude  # override 2026-07-09: mammal + off-topic (AGRP circuits)
+- paper_id: P034
+  title: Role of the neuropeptide F 1 in regulating the appetite for food in locusta
+    migratoria
+  relevance: relevant
+  species: insect
+  paper_type: primary
+  reason: The paper studies neuropeptide F1 in locusts and its effect on feeding behavior,
+    but does not measure locomotor activity or starvation-induced hyperactivity.
+  default_decision: include
+  decision: include
+- paper_id: P035
+  title: Adipokinetic hormones of insect release, signal transduction, and responses
+  relevance: peripheral
+  species: insect
+  paper_type: review
+  reason: This is a review of insect AKH biology covering release, signal transduction,
+    and metabolic responses, but does not test starvation-induced hyperactivity or
+    locomotor behavior.
+  default_decision: include
+  decision: include
+- paper_id: P036
+  title: The comparative physiology of food deprivation from feast to famine
+  relevance: peripheral
+  species: other
+  paper_type: review
+  reason: This is a comparative physiology review of food deprivation across many
+    animal groups, with no original experiments on neuropeptide regulation of starvation-induced
+    hyperactivity.
+  default_decision: include
+  decision: include
+- paper_id: P037
+  title: PiwipiRNAs control food intake by promoting neuro-1
+  relevance: relevant
+  species: insect
+  paper_type: primary
+  reason: The paper studies neuropeptide F (NPF1) regulation by Piwi/piRNAs in locust
+    feeding, but does not measure starvation-induced hyperactivity or locomotor behavior.
+  default_decision: include
+  decision: include
+- paper_id: P039
+  title: Juvenile hormone and BMP signaling modulate fat body cell fate during the
+    transition of previtelloge
+  relevance: unrelated
+  species: insect
+  paper_type: primary
+  reason: The paper studies juvenile hormone and BMP signaling in locust fat body
+    cell fate during previtellogenic to vitellogenic transition, with no mention of
+    starvation-induced hyperactivity or locomotor behavior.
+  default_decision: exclude
+  decision: exclude
+- paper_id: P040
+  title: Octopamine mediates starvation-induced hyperactivity in adult drosophila-1
+  relevance: core
+  species: insect
+  paper_type: primary
+  reason: Original experiments directly test how octopamine (a neuropeptide) regulates
+    locomotor behavior during starvation-induced hyperactivity in Drosophila.
+  default_decision: include
+  decision: include
+- paper_id: P042
+  title: The role of dopamine in foraging decisions in social insects
+  relevance: peripheral
+  species: insect
+  paper_type: review
+  reason: This is a review on dopamine's role in ant foraging decisions, not original
+    experiments on neuropeptide regulation of starvation-induced locomotor activity.
+  default_decision: include
+  decision: include
+- paper_id: P043
+  title: Regulation of starvation-induced hyperactivity by insulin and glucagon signaling
+    in adult drosophila
+  relevance: core
+  species: insect
+  paper_type: primary
+  reason: Original experiments in Drosophila directly test how AKH receptor (glucagon
+    analog) and its neurons regulate starvation-induced hyperactivity, measuring locomotor
+    behavior.
+  default_decision: include
+  decision: include
+- paper_id: P044
+  title: Insect behavior and physiological adaptation mechanisms under starvation
+    stress
+  relevance: peripheral
+  species: insect
+  paper_type: review
+  reason: This is a mini-review surveying insect behavioral and physiological adaptations
+    to starvation, including metabolic changes and hormone regulation, but does not
+    present original experiments on neuropeptide regulation of starvation-induced
+    hyperactivity.
+  default_decision: include
+  decision: include
+- paper_id: P045
+  title: Decreased circulating leptin and increased neuropeptide Y gene expression
+    are implicated in food dep
+  relevance: unrelated
+  species: mammal
+  paper_type: primary
+  reason: The paper studies leptin and neuropeptide Y in striped hamsters, a mammal,
+    which is off-topic for an insect-focused candidate-gene pipeline.
+  default_decision: exclude
+  decision: exclude
+- paper_id: P046
+  title: Juvenile hormone promotes paracellular transport of yolk proteins via remodeling
+    zonula adherens at
+  relevance: unrelated
+  species: insect
+  paper_type: primary
+  reason: Focuses on juvenile hormone regulation of yolk protein transport via adherens
+    junction remodeling in locust follicular epithelium, with no connection to starvation-induced
+    hyperactivity or neuropeptide modulation of locomotor behavior.
+  default_decision: exclude
+  decision: exclude
+- paper_id: P047
+  title: finsc-5-1581307
+  relevance: peripheral
+  species: insect
+  paper_type: review
+  reason: This is a review on dopamine's role in foraging decisions in social insects,
+    not original experiments on neuropeptide regulation of starvation-induced hyperactivity.
+  default_decision: include
+  decision: include
+- paper_id: P048
+  title: s41587-022-01424-w
+  relevance: unrelated
+  species: other
+  paper_type: review
+  reason: This is a review on shotgun proteomics methods, with no mention of starvation-induced
+    hyperactivity, locomotor behavior, or neuropeptides.
+  default_decision: exclude
+  decision: exclude

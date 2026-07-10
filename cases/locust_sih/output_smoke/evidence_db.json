@@ -1,0 +1,99 @@
+{
+  "candidates": [
+    {
+      "candidate": "AKH",
+      "total_score": 0.5,
+      "evidence_count": 2,
+      "study_count": 1,
+      "evidence_levels": {
+        "functional": 1,
+        "peptide": 1
+      },
+      "direction_consistency": 0.5,
+      "ortholog": null,
+      "top_papers": [
+        "pdf-P001"
+      ],
+      "score_breakdown": {
+        "level_raw": 6,
+        "level_norm": 1.0,
+        "convergence": 1.0,
+        "ortholog_mult": 0.5,
+        "w_level": 0.5,
+        "w_conv": 0.5
+      }
+    },
+    {
+      "candidate": "octopamine",
+      "total_score": 0.41666666666666663,
+      "evidence_count": 1,
+      "study_count": 1,
+      "evidence_levels": {
+        "functional": 1
+      },
+      "direction_consistency": 1.0,
+      "ortholog": null,
+      "top_papers": [
+        "pdf-P002"
+      ],
+      "score_breakdown": {
+        "level_raw": 4,
+        "level_norm": 0.6666666666666666,
+        "convergence": 1.0,
+        "ortholog_mult": 0.5,
+        "w_level": 0.5,
+        "w_conv": 0.5
+      }
+    }
+  ],
+  "evidence": [
+    {
+      "id": "P001-E001",
+      "paper_id": "P001",
+      "candidate": "Adipokinetic hormone",
+      "core_name": "AKH",
+      "candidate_type": "neuropeptide",
+      "species": "Drosophila melanogaster",
+      "evidence_level": "functional",
+      "direction": "down",
+      "quote": "flies devoid of AKH neurons not only lacked this type of hyperactivity, but also displayed strong resistance to starvation-induced death",
+      "confidence": 0.95,
+      "source_pmid": "pdf-P001",
+      "source_title": "lee2004",
+      "behavior_effect": "Flies devoid of AKH neurons lacked starvation-induced hyperactivity",
+      "expression_location": "corpora cardiaca"
+    },
+    {
+      "id": "P001-E002",
+      "paper_id": "P001",
+      "candidate": "Adipokinetic hormone",
+      "core_name": "AKH",
+      "candidate_type": "neuropeptide",
+      "species": "Drosophila melanogaster",
+      "evidence_level": "peptide",
+      "direction": "unchanged",
+      "quote": "AKH-immunoreactive cells are detectable only in the CC of larvae and adults",
+      "confidence": 0.9,
+      "source_pmid": "pdf-P001",
+      "source_title": "lee2004",
+      "behavior_effect": null,
+      "expression_location": "corpora cardiaca"
+    },
+    {
+      "id": "P002-E001",
+      "paper_id": "P002",
+      "candidate": "octopamine",
+      "core_name": "octopamine",
+      "candidate_type": "biogenic_amine",
+      "species": "Drosophila melanogaster",
+      "evidence_level": "functional",
+      "direction": "up",
+      "quote": "octopamine, the insect counterpart of vertebrate norepinephrine, as well as the neurons expressing octopamine, were both necessary and sufficient for starvation-induced hyperactivity",
+      "confidence": 0.95,
+      "source_pmid": "pdf-P002",
+      "source_title": "yang2015",
+      "behavior_effect": "Octopamine and octopamine-expressing neurons are necessary and sufficient for starvation-induced hyperactivity",
+      "expression_location": null
+    }
+  ]
+}

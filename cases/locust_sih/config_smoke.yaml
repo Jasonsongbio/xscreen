@@ -1,0 +1,67 @@
+# Smoke 测试配置：用 fixtures PDF（lee2004 + yang2015）快速验证 LLM 提取质量
+#
+# 用途：
+#   1. 填真实 DEEPSEEK_API_KEY 到 .env
+#   2. python src/run.py cases/locust_sih/config_smoke.yaml   （跑完整 pipeline）
+#   3. python -m tools.qa_check cases/locust_sih/config_smoke.yaml  （质量检查）
+#
+# 与生产 config 的区别：
+#   - pdf_dir 指向 fixtures（2 篇已知文献）
+#   - use_pubmed: false（不调用 PubMed，纯 PDF 验证）
+#   - min_studies: 1（2 篇论文难有 2 studies 重叠，降低门槛看提取全貌）
+#   - output 独立目录（不污染生产输出）
+
+study:
+  topic: "starvation-induced hyperactivity"
+  target_species: "Locusta migratoria"
+  reference_species:
+    - "Drosophila melanogaster"
+  entity_type: "neuropeptide"
+  behavior: "locomotor"
+
+search:
+  pdf_dir: "tests/fixtures/sample_pdfs"   # 相对项目根（从 xscreen/ 目录运行）
+  use_pubmed: false
+  date_range: [2000, 2026]
+  max_results: 100
+
+extraction:
+  llm:
+    provider: "deepseek"
+    model: "deepseek-chat"
+    api_key_env: "DEEPSEEK_API_KEY"
+  prompt_file: "prompts/extraction_prompt.txt"
+  prompt_file_review: "prompts/extraction_prompt_review.txt"
+  evidence_levels:
+    - transcript
+    - peptide
+    - release
+    - functional
+  weights:
+    transcript: 1
+    peptide: 2
+    release: 3
+    functional: 4
+    review_mention: 0.25
+  max_tokens: 4096
+  temperature: 0.0
+
+homolog:
+  method: "BLAST"
+  database: "UniProt"
+  min_identity: 0.4
+  min_coverage: 0.5
+  require_ortholog: false
+
+scoring:
+  min_studies: 1        # smoke: 降低门槛看完整提取
+  weight_convergence: 0.5
+  weight_level: 0.5
+  top_n: 30
+
+output:
+  dir: "output_smoke"
+  table: "candidates_ranked.xlsx"
+  evidence_detail: "evidence_detail.xlsx"
+  database: "evidence_db.json"
+  report: "report.md"

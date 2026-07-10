@@ -1,0 +1,73 @@
+# 回溯性 corpus 配置：2000-2015 的 520 篇 PubMed 论文
+#
+# 用途：回溯性预测验证——用 2000-2015 corpus 跑 xscreen，
+# 看其 top 候选是否在 2016-2026 被研究证实。
+#
+# 运行：
+#   python tools/extract_unbiased.py cases/locust_sih/config_retrospective.yaml
+#   python tools/score_unbiased.py cases/locust_sih/config_retrospective.yaml
+
+study:
+  topic: "starvation-induced hyperactivity"
+  target_species: "Locusta migratoria"
+  reference_species:
+    - "Drosophila melanogaster"
+  entity_type: "neuropeptide"
+  behavior: "locomotor"
+  master_list: "cases/locust_sih/neuropeptide_master_list.md"   # core_name 规范化主表
+
+search:
+  papers_json: "cases/locust_sih/retrospective_papers_2000_2015.json"
+  use_pubmed: false
+  date_range: [2000, 2015]
+  max_results: 520
+
+screening:
+  enabled: false
+
+extraction:
+  llm:
+    provider: "deepseek"
+    model: "deepseek-chat"
+    api_key_env: "DEEPSEEK_API_KEY"
+  prompt_file: "prompts/extraction_prompt.txt"
+  prompt_file_review: "prompts/extraction_prompt_review.txt"
+  evidence_levels:
+    - transcript
+    - peptide
+    - release
+    - functional
+    - review_mention
+  weights:
+    transcript: 1
+    peptide: 2
+    release: 3
+    functional: 4
+    review_mention: 0.25
+  max_tokens: 4096
+  temperature: 0.0
+  concurrent: 8
+
+homolog:
+  method: "BLAST"
+  database: "UniProt"
+  min_identity: 0.4
+  min_coverage: 0.5
+  require_ortholog: false
+
+scoring:
+  min_studies: 2
+  weight_convergence: 0.5
+  weight_level: 0.5
+  top_n: 30
+  type_filter:
+    enabled: true   # 杠杆 2：过滤 receptor/enzyme/drug/metabolite/noise，保留信号分子
+  normalization:
+    enabled: true   # core_name 规范化（合并 AT/allatotropin、FMRFa/FMRFamide 等同义词）
+
+output:
+  dir: "output_retrospective"
+  table: "candidates_ranked.xlsx"
+  evidence_detail: "evidence_detail.xlsx"
+  database: "evidence_db.json"
+  report: "report.md"

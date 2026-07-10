@@ -1,0 +1,44 @@
+{
+  "description": "Gold standard candidate list for xscreen locust_sih case. Built from 3 domain reviews, with relevance to starvation-induced behavior annotated. Claude-assisted extraction, pending domain-expert (user) review.",
+  "source_reviews": [
+    {"id": "Nassel2010", "citation": "Nässel & Winther 2010 - Drosophila neuropeptides in regulation of physiology and behavior"},
+    {"id": "Kim2017", "citation": "Kim et al. 2017 - Neuromodulation of innate behaviors in Drosophila"},
+    {"id": "Fadda2019", "citation": "Fadda et al. 2019 - Regulation of feeding and metabolism by NPF and sNPF in invertebrates"}
+  ],
+  "relevance_scale": {
+    "high": "directly regulates feeding / metabolism / locomotor / starvation behavior",
+    "medium": "indirectly related (water balance, stress, metabolic coupling)",
+    "low": "other physiological function (ecdysis, diuresis, sensory, etc.)"
+  },
+  "candidates": [
+    {"name": "NPF",           "in_reviews": ["Nassel2010", "Kim2017", "Fadda2019"], "relevance": "high"},
+    {"name": "sNPF",          "in_reviews": ["Nassel2010", "Kim2017", "Fadda2019"], "relevance": "high"},
+    {"name": "AKH",           "in_reviews": ["Nassel2010", "Kim2017"],              "relevance": "high"},
+    {"name": "octopamine",    "in_reviews": ["Kim2017", "Fadda2019"],               "relevance": "high"},
+    {"name": "dopamine",      "in_reviews": ["Kim2017", "Fadda2019"],               "relevance": "high"},
+    {"name": "serotonin",     "in_reviews": ["Kim2017", "Fadda2019"],               "relevance": "high"},
+    {"name": "dILP",          "in_reviews": ["Nassel2010", "Kim2017", "Fadda2019"], "relevance": "high", "aliases": ["insulin", "ILP"]},
+    {"name": "Hugin",         "in_reviews": ["Nassel2010"],                         "relevance": "high"},
+    {"name": "NPY",           "in_reviews": ["Nassel2010", "Kim2017", "Fadda2019"], "relevance": "high"},
+    {"name": "allatostatin",  "in_reviews": ["Nassel2010", "Kim2017"],              "relevance": "high", "aliases": ["ASTA", "ASTC"]},
+    {"name": "CCHamide",      "in_reviews": ["Nassel2010", "Kim2017"],              "relevance": "high"},
+    {"name": "MIP",           "in_reviews": ["Nassel2010", "Kim2017"],              "relevance": "high", "aliases": ["myoinhibitory"]},
+    {"name": "sulfakinin",    "in_reviews": ["Nassel2010", "Kim2017"],              "relevance": "high", "aliases": ["DSK", "drosulfakinin"]},
+    {"name": "tachykinin",    "in_reviews": ["Nassel2010", "Kim2017"],              "relevance": "high", "aliases": ["DTK"]},
+    {"name": "leucokinin",    "in_reviews": ["Nassel2010"],                         "relevance": "medium"},
+    {"name": "corazonin",     "in_reviews": ["Nassel2010", "Kim2017"],              "relevance": "medium", "aliases": ["Crz"]},
+    {"name": "DH31",          "in_reviews": ["Nassel2010", "Kim2017"],              "relevance": "medium"},
+    {"name": "CAPA",          "in_reviews": ["Nassel2010"],                         "relevance": "medium"},
+    {"name": "pyrokinin",     "in_reviews": ["Nassel2010"],                         "relevance": "medium"},
+    {"name": "tyramine",      "in_reviews": ["Kim2017"],                            "relevance": "medium"},
+    {"name": "FMRFamide",     "in_reviews": ["Nassel2010", "Fadda2019"],            "relevance": "low"},
+    {"name": "NPLP1",         "in_reviews": ["Nassel2010"],                         "relevance": "low"},
+    {"name": "SIFamide",      "in_reviews": ["Nassel2010"],                         "relevance": "low", "aliases": ["SIFa"]},
+    {"name": "proctolin",     "in_reviews": ["Nassel2010"],                         "relevance": "low"},
+    {"name": "ETH",           "in_reviews": ["Nassel2010"],                         "relevance": "low"},
+    {"name": "eclosion_hormone", "in_reviews": ["Nassel2010"],                      "relevance": "low"},
+    {"name": "drosokinin",    "in_reviews": ["Nassel2010"],                         "relevance": "low"},
+    {"name": "IFamide",       "in_reviews": ["Nassel2010"],                         "relevance": "low"},
+    {"name": "GABA",          "in_reviews": ["Kim2017"],                            "relevance": "low"}
+  ]
+}

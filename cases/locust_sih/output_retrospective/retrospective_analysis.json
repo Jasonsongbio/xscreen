@@ -1,0 +1,294 @@
+{
+  "description": "Retrospective prediction: 2000-2015 corpus predicts 2016-2026 research",
+  "retro_top20_performance": [
+    {
+      "candidate": "PDF",
+      "early_rank": 1,
+      "early_studies": 47,
+      "full_rank": 1,
+      "full_studies": 97
+    },
+    {
+      "candidate": "octopamine",
+      "early_rank": 2,
+      "early_studies": 36,
+      "full_rank": 4,
+      "full_studies": 86
+    },
+    {
+      "candidate": "serotonin",
+      "early_rank": 3,
+      "early_studies": 31,
+      "full_rank": 5,
+      "full_studies": 82
+    },
+    {
+      "candidate": "dopamine",
+      "early_rank": 4,
+      "early_studies": 33,
+      "full_rank": 3,
+      "full_studies": 94
+    },
+    {
+      "candidate": "sNPF",
+      "early_rank": 5,
+      "early_studies": 30,
+      "full_rank": 6,
+      "full_studies": 75
+    },
+    {
+      "candidate": "NPF",
+      "early_rank": 6,
+      "early_studies": 28,
+      "full_rank": 2,
+      "full_studies": 89
+    },
+    {
+      "candidate": "AKH",
+      "early_rank": 7,
+      "early_studies": 34,
+      "full_rank": 7,
+      "full_studies": 72
+    },
+    {
+      "candidate": "tyramine",
+      "early_rank": 8,
+      "early_studies": 15,
+      "full_rank": 8,
+      "full_studies": 38
+    },
+    {
+      "candidate": "FMRFamide",
+      "early_rank": 9,
+      "early_studies": 9,
+      "full_rank": 21,
+      "full_studies": 14
+    },
+    {
+      "candidate": "corazonin",
+      "early_rank": 10,
+      "early_studies": 11,
+      "full_rank": 11,
+      "full_studies": 22
+    },
+    {
+      "candidate": "sulfakinin",
+      "early_rank": 11,
+      "early_studies": 9,
+      "full_rank": 9,
+      "full_studies": 21
+    },
+    {
+      "candidate": "histamine",
+      "early_rank": 12,
+      "early_studies": 8,
+      "full_rank": 18,
+      "full_studies": 14
+    },
+    {
+      "candidate": "allatostatin",
+      "early_rank": 13,
+      "early_studies": 11,
+      "full_rank": 23,
+      "full_studies": 17
+    },
+    {
+      "candidate": "MIP",
+      "early_rank": 14,
+      "early_studies": 8,
+      "full_rank": 15,
+      "full_studies": 15
+    },
+    {
+      "candidate": "ILP",
+      "early_rank": 15,
+      "early_studies": 7,
+      "full_rank": 10,
+      "full_studies": 22
+    },
+    {
+      "candidate": "ETH",
+      "early_rank": 16,
+      "early_studies": 5,
+      "full_rank": 26,
+      "full_studies": 10
+    },
+    {
+      "candidate": "ITP",
+      "early_rank": 17,
+      "early_studies": 5,
+      "full_rank": 24,
+      "full_studies": 10
+    },
+    {
+      "candidate": "allatotropin",
+      "early_rank": 18,
+      "early_studies": 9,
+      "full_rank": null,
+      "full_studies": null
+    },
+    {
+      "candidate": "kinin",
+      "early_rank": 19,
+      "early_studies": 6,
+      "full_rank": 22,
+      "full_studies": 12
+    },
+    {
+      "candidate": "tachykinin",
+      "early_rank": 20,
+      "early_studies": 8,
+      "full_rank": 13,
+      "full_studies": 20
+    }
+  ],
+  "growth_2016_2026": [
+    {
+      "candidate": "ILP",
+      "early_studies": 6,
+      "late_new": 16,
+      "growth_ratio": 2.6666666666666665
+    },
+    {
+      "candidate": "NPF",
+      "early_studies": 27,
+      "late_new": 62,
+      "growth_ratio": 2.2962962962962963
+    },
+    {
+      "candidate": "dopamine",
+      "early_studies": 31,
+      "late_new": 63,
+      "growth_ratio": 2.032258064516129
+    },
+    {
+      "candidate": "tachykinin",
+      "early_studies": 7,
+      "late_new": 13,
+      "growth_ratio": 1.8571428571428572
+    },
+    {
+      "candidate": "serotonin",
+      "early_studies": 31,
+      "late_new": 51,
+      "growth_ratio": 1.6451612903225807
+    },
+    {
+      "candidate": "sNPF",
+      "early_studies": 29,
+      "late_new": 46,
+      "growth_ratio": 1.5862068965517242
+    },
+    {
+      "candidate": "tyramine",
+      "early_studies": 15,
+      "late_new": 23,
+      "growth_ratio": 1.5333333333333334
+    },
+    {
+      "candidate": "ITP",
+      "early_studies": 4,
+      "late_new": 6,
+      "growth_ratio": 1.5
+    },
+    {
+      "candidate": "octopamine",
+      "early_studies": 36,
+      "late_new": 50,
+      "growth_ratio": 1.3888888888888888
+    },
+    {
+      "candidate": "sulfakinin",
+      "early_studies": 9,
+      "late_new": 12,
+      "growth_ratio": 1.3333333333333333
+    },
+    {
+      "candidate": "AKH",
+      "early_studies": 32,
+      "late_new": 40,
+      "growth_ratio": 1.25
+    },
+    {
+      "candidate": "MIP",
+      "early_studies": 7,
+      "late_new": 8,
+      "growth_ratio": 1.1428571428571428
+    },
+    {
+      "candidate": "PDF",
+      "early_studies": 47,
+      "late_new": 50,
+      "growth_ratio": 1.0638297872340425
+    },
+    {
+      "candidate": "FMRFamide",
+      "early_studies": 7,
+      "late_new": 7,
+      "growth_ratio": 1.0
+    },
+    {
+      "candidate": "ETH",
+      "early_studies": 5,
+      "late_new": 5,
+      "growth_ratio": 1.0
+    },
+    {
+      "candidate": "kinin",
+      "early_studies": 6,
+      "late_new": 6,
+      "growth_ratio": 1.0
+    },
+    {
+      "candidate": "corazonin",
+      "early_studies": 12,
+      "late_new": 10,
+      "growth_ratio": 0.8333333333333334
+    },
+    {
+      "candidate": "histamine",
+      "early_studies": 8,
+      "late_new": 6,
+      "growth_ratio": 0.75
+    },
+    {
+      "candidate": "allatostatin",
+      "early_studies": 11,
+      "late_new": 6,
+      "growth_ratio": 0.5454545454545454
+    },
+    {
+      "candidate": "allatotropin",
+      "early_studies": 8,
+      "late_new": 3,
+      "growth_ratio": 0.375
+    }
+  ],
+  "new_in_full": [
+    {
+      "candidate": "neuropeptides",
+      "full_rank": 12,
+      "full_studies": 23
+    },
+    {
+      "candidate": "AstA",
+      "full_rank": 14,
+      "full_studies": 11
+    },
+    {
+      "candidate": "GABA",
+      "full_rank": 19,
+      "full_studies": 16
+    },
+    {
+      "candidate": "myosuppressin",
+      "full_rank": 28,
+      "full_studies": 8
+    },
+    {
+      "candidate": "DH44",
+      "full_rank": 29,
+      "full_studies": 10
+    }
+  ]
+}

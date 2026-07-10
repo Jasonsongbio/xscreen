@@ -1,0 +1,951 @@
+[
+  {
+    "core_name": "AKHR",
+    "candidate_type": "neuropeptide",
+    "study_count": 1,
+    "evidence_count": 2,
+    "citation_min": 97,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [
+      "receptor (known receptor gene: AKHR)"
+    ],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "type_error",
+    "reason": "receptor (known receptor gene: AKHR)",
+    "quotes_sample": [
+      "only the neuronal knock-down of AKHR eliminated starvation-induced hyperactivity",
+      "AKHR was expressed in a small group of octopaminergic neurons in the brain."
+    ],
+    "pmids": [
+      "pdf-P043"
+    ]
+  },
+  {
+    "core_name": "AmDOP2",
+    "candidate_type": "other",
+    "study_count": 1,
+    "evidence_count": 2,
+    "citation_min": 97,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [
+      "receptor (known receptor gene: AmDOP2)"
+    ],
+    "type_inconsistent": false,
+    "type_set": [
+      "other"
+    ],
+    "klass": "type_error",
+    "reason": "receptor (known receptor gene: AmDOP2)",
+    "quotes_sample": [
+      "Injection of Amdop2 dsRNA into the mushroom bodies reduced the levels of Amdop2 ",
+      "Injection of Amdop2 dsRNA into the mushroom bodies reduced the levels of Amdop2 "
+    ],
+    "pmids": [
+      "pdf-P021"
+    ]
+  },
+  {
+    "core_name": "biogenic_amine",
+    "candidate_type": "biogenic_amine",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 98,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [
+      "type label as candidate name (extraction artifact)"
+    ],
+    "type_inconsistent": false,
+    "type_set": [
+      "biogenic_amine"
+    ],
+    "klass": "type_error",
+    "reason": "type label as candidate name (extraction artifact)",
+    "quotes_sample": [
+      "feedbacks from peripheral systems such as gut stretch receptors, hormones and bi"
+    ],
+    "pmids": [
+      "pdf-P002"
+    ]
+  },
+  {
+    "core_name": "dInR",
+    "candidate_type": "peptide_hormone",
+    "study_count": 1,
+    "evidence_count": 2,
+    "citation_min": 98,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [
+      "receptor (known receptor gene: dInR)"
+    ],
+    "type_inconsistent": false,
+    "type_set": [
+      "peptide_hormone"
+    ],
+    "klass": "type_error",
+    "reason": "receptor (known receptor gene: dInR)",
+    "quotes_sample": [
+      "Single cell analysis of AKHR+ neurons identified the co-expression of Drosophila",
+      "which imposed suppressive effect on starvation-induced hyperactivity."
+    ],
+    "pmids": [
+      "pdf-P043"
+    ]
+  },
+  {
+    "core_name": "flupenthixol",
+    "candidate_type": "other",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 97,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [
+      "drug (known pharmacological agent: flupenthixol)"
+    ],
+    "type_inconsistent": false,
+    "type_set": [
+      "other"
+    ],
+    "klass": "type_error",
+    "reason": "drug (known pharmacological agent: flupenthixol)",
+    "quotes_sample": [
+      "Dopamine or the dopamine receptor antagonist flupenthixol was injected into the "
+    ],
+    "pmids": [
+      "pdf-P021"
+    ]
+  },
+  {
+    "core_name": "partner of bursicon",
+    "candidate_type": "neuropeptide",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 100,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "off_topic",
+    "reason": "single-study (no convergence)",
+    "quotes_sample": [
+      "Bursicon and partner of bursicon"
+    ],
+    "pmids": [
+      "pdf-P024"
+    ]
+  },
+  {
+    "core_name": "syp",
+    "candidate_type": "other",
+    "study_count": 1,
+    "evidence_count": 3,
+    "citation_min": 97,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "other"
+    ],
+    "klass": "off_topic",
+    "reason": "single-study (no convergence)",
+    "quotes_sample": [
+      "adult flies with neuron-specific syp knockdown were viable and exhibited decreas",
+      "RNA-seq analyses revealed that syp was alternatively spliced under starvation wh",
+      "We further generated an alternatively-spliced-exon-specific knockout (KO) line a"
+    ],
+    "pmids": [
+      "pdf-P005"
+    ]
+  },
+  {
+    "core_name": "sex peptide",
+    "candidate_type": "neuropeptide",
+    "study_count": 2,
+    "evidence_count": 2,
+    "citation_min": 100,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "plausible",
+    "reason": "passes 4 layers: cite_ok, type stable, 2 studies",
+    "quotes_sample": [
+      "Sex Peptide",
+      "Sex-peptide, a seminal peptide that indirectly stimulates appetite"
+    ],
+    "pmids": [
+      "pdf-P014",
+      "pdf-P024"
+    ]
+  },
+  {
+    "core_name": "ITP",
+    "candidate_type": "neuropeptide",
+    "study_count": 3,
+    "evidence_count": 3,
+    "citation_min": 98,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "with tachykinin-related peptides (TRPs) and ion transport peptides (ITPs) in the",
+      "with tachykinin-related peptides (TRPs) and ion transport peptides (ITPs) in the",
+      "Ion transport peptide"
+    ],
+    "pmids": [
+      "pdf-P001",
+      "pdf-P023",
+      "pdf-P024"
+    ]
+  },
+  {
+    "core_name": "NPF1a",
+    "candidate_type": "neuropeptide",
+    "study_count": 3,
+    "evidence_count": 9,
+    "citation_min": 73,
+    "citation_fail_count": 0,
+    "citation_warn_count": 2,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "the mRNA levels of NPF1a and NPF2 rapidly decreased during gregarization",
+      "locust locomotor activity, including total duration of movement and total distan",
+      "locust locomotor activity, including total duration of movement and total distan"
+    ],
+    "pmids": [
+      "pdf-P012",
+      "pdf-P034",
+      "pdf-P037"
+    ]
+  },
+  {
+    "core_name": "PDF",
+    "candidate_type": "neuropeptide",
+    "study_count": 3,
+    "evidence_count": 3,
+    "citation_min": 99,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "The sNPF signaling pathway interacts with other neurohormones such as insulin-li",
+      "The sNPF signaling pathway interacts with other neurohormones such as insulin-li",
+      "Pigment-dispersing factor"
+    ],
+    "pmids": [
+      "pdf-P001",
+      "pdf-P023",
+      "pdf-P024"
+    ]
+  },
+  {
+    "core_name": "CCAP",
+    "candidate_type": "neuropeptide",
+    "study_count": 2,
+    "evidence_count": 2,
+    "citation_min": 99,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "Crustacean cardioactive peptide (CCAP), a conserved multifunctional peptide",
+      "sNPF activates the locomotor program in fed animals, whereas crustacean cardioac"
+    ],
+    "pmids": [
+      "pdf-P024",
+      "pdf-P030"
+    ]
+  },
+  {
+    "core_name": "DH44",
+    "candidate_type": "neuropeptide",
+    "study_count": 2,
+    "evidence_count": 2,
+    "citation_min": 100,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "activating DH44Ns strongly increased hyperactivity",
+      "Diuretic hormones (DH31 and DH44)"
+    ],
+    "pmids": [
+      "pdf-P003",
+      "pdf-P024"
+    ]
+  },
+  {
+    "core_name": "PrRP",
+    "candidate_type": "neuropeptide",
+    "study_count": 2,
+    "evidence_count": 2,
+    "citation_min": 97,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "The analysis of sNPF receptor (sNPFR) sequences and their alignment with NPF rec",
+      "the sNPF system seems to have been lost or evolved into the prolactin-releasing "
+    ],
+    "pmids": [
+      "pdf-P001",
+      "pdf-P009"
+    ]
+  },
+  {
+    "core_name": "RPCH",
+    "candidate_type": "neuropeptide",
+    "study_count": 2,
+    "evidence_count": 2,
+    "citation_min": 96,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "Red pigment concentrating hormone was found to be cross-reactive with insect AKH",
+      "Their structure is clearly related to that of the red pigment-concentrating horm"
+    ],
+    "pmids": [
+      "pdf-P022",
+      "pdf-P035"
+    ]
+  },
+  {
+    "core_name": "allatotropin",
+    "candidate_type": "neuropeptide",
+    "study_count": 2,
+    "evidence_count": 3,
+    "citation_min": 98,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "Insect sulfakinins, tachykinins, allatotropin and proctolin have all been shown ",
+      "the Manduca sexta C-type allatostatin and allatotropin inhibited feeding when in",
+      "Allatotropin"
+    ],
+    "pmids": [
+      "pdf-P002",
+      "pdf-P024"
+    ]
+  },
+  {
+    "core_name": "glucagon",
+    "candidate_type": "peptide_hormone",
+    "study_count": 2,
+    "evidence_count": 2,
+    "citation_min": 97,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "peptide_hormone"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as peptide_hormone",
+    "quotes_sample": [
+      "Hormones such as epinephrine, adrenocorticotropic hormone, and glucagon that res",
+      "the actions of AKH have significant functional similarities to mammalian glucago"
+    ],
+    "pmids": [
+      "pdf-P010",
+      "pdf-P022"
+    ]
+  },
+  {
+    "core_name": "myosuppressin",
+    "candidate_type": "neuropeptide",
+    "study_count": 2,
+    "evidence_count": 3,
+    "citation_min": 97,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "myosuppressins, myoinhibitory peptides and allatostatins all inhibited spontaneo",
+      "The first insect FaRP to be identified from an insect was a FLRFamide, leucomyos",
+      "Myosuppressins (FLRFamides, DMS)"
+    ],
+    "pmids": [
+      "pdf-P002",
+      "pdf-P024"
+    ]
+  },
+  {
+    "core_name": "ACTH",
+    "candidate_type": "peptide_hormone",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 97,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "peptide_hormone"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as peptide_hormone",
+    "quotes_sample": [
+      "Hormones such as epinephrine, adrenocorticotropic hormone, and glucagon that res"
+    ],
+    "pmids": [
+      "pdf-P010"
+    ]
+  },
+  {
+    "core_name": "AKH-I",
+    "candidate_type": "neuropeptide",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 98,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "In the glandular part of the corpus cardiacum of L. migratoria, three AKHs have "
+    ],
+    "pmids": [
+      "pdf-P035"
+    ]
+  },
+  {
+    "core_name": "AKH-II",
+    "candidate_type": "neuropeptide",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 98,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "In the glandular part of the corpus cardiacum of L. migratoria, three AKHs have "
+    ],
+    "pmids": [
+      "pdf-P035"
+    ]
+  },
+  {
+    "core_name": "AKH-III",
+    "candidate_type": "neuropeptide",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 98,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "In the glandular part of the corpus cardiacum of L. migratoria, three AKHs have "
+    ],
+    "pmids": [
+      "pdf-P035"
+    ]
+  },
+  {
+    "core_name": "AKH/RPCH",
+    "candidate_type": "neuropeptide",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 96,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "All members but one of the AKH/RPCH family of peptides consist of 8 to 10 amino "
+    ],
+    "pmids": [
+      "pdf-P035"
+    ]
+  },
+  {
+    "core_name": "FLRFamide",
+    "candidate_type": "neuropeptide",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 96,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "the FLRFamides and the HMRFamides"
+    ],
+    "pmids": [
+      "pdf-P002"
+    ]
+  },
+  {
+    "core_name": "GnRH",
+    "candidate_type": "neuropeptide",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 98,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "identification of the receptor, and subsequent studies probing AKH receptor evol"
+    ],
+    "pmids": [
+      "pdf-P022"
+    ]
+  },
+  {
+    "core_name": "HMRFamide",
+    "candidate_type": "neuropeptide",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 96,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "the FLRFamides and the HMRFamides"
+    ],
+    "pmids": [
+      "pdf-P002"
+    ]
+  },
+  {
+    "core_name": "IRP",
+    "candidate_type": "peptide_hormone",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 99,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "peptide_hormone"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as peptide_hormone",
+    "quotes_sample": [
+      "components of the evolutionarily conserved insulin/insulin-related growth factor"
+    ],
+    "pmids": [
+      "pdf-P008"
+    ]
+  },
+  {
+    "core_name": "NPF2",
+    "candidate_type": "neuropeptide",
+    "study_count": 1,
+    "evidence_count": 3,
+    "citation_min": 73,
+    "citation_fail_count": 0,
+    "citation_warn_count": 2,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "the mRNA levels of NPF1a and NPF2 rapidly decreased during gregarization",
+      "locust locomotor activity, including total duration of movement and total distan",
+      "locust locomotor activity, including total duration of movement and total distan"
+    ],
+    "pmids": [
+      "pdf-P012"
+    ]
+  },
+  {
+    "core_name": "PP",
+    "candidate_type": "neuropeptide",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 99,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as peptide_hormone",
+    "quotes_sample": [
+      "NPY is part of a large neuropeptide family that besides NPY, includes peptide YY"
+    ],
+    "pmids": [
+      "pdf-P009"
+    ]
+  },
+  {
+    "core_name": "PTTH",
+    "candidate_type": "neuropeptide",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 100,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "Prothoracicotropic hormone (PTTH)"
+    ],
+    "pmids": [
+      "pdf-P024"
+    ]
+  },
+  {
+    "core_name": "PYY",
+    "candidate_type": "neuropeptide",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 99,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "NPY is part of a large neuropeptide family that besides NPY, includes peptide YY"
+    ],
+    "pmids": [
+      "pdf-P009"
+    ]
+  },
+  {
+    "core_name": "acetylcholine",
+    "candidate_type": "neurotransmitter",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 98,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neurotransmitter"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neurotransmitter",
+    "quotes_sample": [
+      "ctenophores do not use serotonin, acetylcholine, dopamine, noradrenaline, adrena"
+    ],
+    "pmids": [
+      "pdf-P030"
+    ]
+  },
+  {
+    "core_name": "adrenaline",
+    "candidate_type": "biogenic_amine",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 98,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "biogenic_amine"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as biogenic_amine",
+    "quotes_sample": [
+      "ctenophores do not use serotonin, acetylcholine, dopamine, noradrenaline, adrena"
+    ],
+    "pmids": [
+      "pdf-P030"
+    ]
+  },
+  {
+    "core_name": "bursicon",
+    "candidate_type": "neuropeptide",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 100,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as peptide_hormone",
+    "quotes_sample": [
+      "Bursicon and partner of bursicon"
+    ],
+    "pmids": [
+      "pdf-P024"
+    ]
+  },
+  {
+    "core_name": "epinephrine",
+    "candidate_type": "biogenic_amine",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 97,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "biogenic_amine"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as biogenic_amine",
+    "quotes_sample": [
+      "Hormones such as epinephrine, adrenocorticotropic hormone, and glucagon that res"
+    ],
+    "pmids": [
+      "pdf-P010"
+    ]
+  },
+  {
+    "core_name": "glycine",
+    "candidate_type": "neurotransmitter",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 98,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neurotransmitter"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neurotransmitter",
+    "quotes_sample": [
+      "ctenophores do not use serotonin, acetylcholine, dopamine, noradrenaline, adrena"
+    ],
+    "pmids": [
+      "pdf-P030"
+    ]
+  },
+  {
+    "core_name": "histamine",
+    "candidate_type": "biogenic_amine",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 98,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "biogenic_amine"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as biogenic_amine",
+    "quotes_sample": [
+      "ctenophores do not use serotonin, acetylcholine, dopamine, noradrenaline, adrena"
+    ],
+    "pmids": [
+      "pdf-P030"
+    ]
+  },
+  {
+    "core_name": "inotocin",
+    "candidate_type": "neuropeptide",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 100,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "Vasopressin-like peptide or inotocins"
+    ],
+    "pmids": [
+      "pdf-P024"
+    ]
+  },
+  {
+    "core_name": "neuroparsin",
+    "candidate_type": "neuropeptide",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 100,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "Neuroparsins"
+    ],
+    "pmids": [
+      "pdf-P024"
+    ]
+  },
+  {
+    "core_name": "noradrenaline",
+    "candidate_type": "biogenic_amine",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 98,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "biogenic_amine"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as biogenic_amine",
+    "quotes_sample": [
+      "ctenophores do not use serotonin, acetylcholine, dopamine, noradrenaline, adrena"
+    ],
+    "pmids": [
+      "pdf-P030"
+    ]
+  },
+  {
+    "core_name": "orcokinin",
+    "candidate_type": "neuropeptide",
+    "study_count": 1,
+    "evidence_count": 1,
+    "citation_min": 100,
+    "citation_fail_count": 0,
+    "citation_warn_count": 0,
+    "type_red_flags": [],
+    "type_inconsistent": false,
+    "type_set": [
+      "neuropeptide"
+    ],
+    "klass": "known",
+    "reason": "in authoritative DB as neuropeptide",
+    "quotes_sample": [
+      "Orcokinin"
+    ],
+    "pmids": [
+      "pdf-P024"
+    ]
+  }
+]

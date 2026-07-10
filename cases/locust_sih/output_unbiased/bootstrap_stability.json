@@ -1,0 +1,201 @@
+{
+  "description": "Bootstrap split-half stability: 10 random 50/50 splits of PMID set",
+  "n_pmids": 965,
+  "n_evidence": 2288,
+  "min_studies_config": 2,
+  "results_min_studies_config": {
+    "10": {
+      "overlap_mean": 8.5,
+      "overlap_range": [
+        8,
+        9
+      ],
+      "jaccard_mean": 0.7424242424242425,
+      "stability_pct": 85.0
+    },
+    "20": {
+      "overlap_mean": 12.7,
+      "overlap_range": [
+        11,
+        15
+      ],
+      "jaccard_mean": 0.4680151011185494,
+      "stability_pct": 63.5
+    },
+    "30": {
+      "overlap_mean": 20.8,
+      "overlap_range": [
+        18,
+        23
+      ],
+      "jaccard_mean": 0.5333179622653306,
+      "stability_pct": 69.33333333333334
+    }
+  },
+  "results_min_studies_1": {
+    "10": {
+      "overlap_mean": 8.5,
+      "stability_pct": 85.0
+    },
+    "20": {
+      "overlap_mean": 12.7,
+      "stability_pct": 63.5
+    },
+    "30": {
+      "overlap_mean": 20.8,
+      "stability_pct": 69.33333333333334
+    }
+  },
+  "full_top30": [
+    {
+      "candidate": "PDF",
+      "score": 0.9843342036553524,
+      "studies": 97
+    },
+    {
+      "candidate": "NPF",
+      "score": 0.9623529649269198,
+      "studies": 89
+    },
+    {
+      "candidate": "dopamine",
+      "score": 0.880750181690937,
+      "studies": 94
+    },
+    {
+      "candidate": "octopamine",
+      "score": 0.8137297784716427,
+      "studies": 86
+    },
+    {
+      "candidate": "serotonin",
+      "score": 0.8074715350865387,
+      "studies": 82
+    },
+    {
+      "candidate": "sNPF",
+      "score": 0.7580078598153481,
+      "studies": 75
+    },
+    {
+      "candidate": "AKH",
+      "score": 0.7079486420284784,
+      "studies": 72
+    },
+    {
+      "candidate": "tyramine",
+      "score": 0.369179160722457,
+      "studies": 38
+    },
+    {
+      "candidate": "sulfakinin",
+      "score": 0.19702026863341499,
+      "studies": 21
+    },
+    {
+      "candidate": "ILP",
+      "score": 0.17084331511937767,
+      "studies": 22
+    },
+    {
+      "candidate": "corazonin",
+      "score": 0.16562138300449517,
+      "studies": 22
+    },
+    {
+      "candidate": "neuropeptides",
+      "score": 0.1443399908481602,
+      "studies": 23
+    },
+    {
+      "candidate": "tachykinin",
+      "score": 0.14421549890985436,
+      "studies": 20
+    },
+    {
+      "candidate": "AstA",
+      "score": 0.13666186643697342,
+      "studies": 11
+    },
+    {
+      "candidate": "MIP",
+      "score": 0.13051802104923152,
+      "studies": 15
+    },
+    {
+      "candidate": "DH31",
+      "score": 0.12647708002476382,
+      "studies": 12
+    },
+    {
+      "candidate": "SIFamide",
+      "score": 0.12431697666280854,
+      "studies": 15
+    },
+    {
+      "candidate": "histamine",
+      "score": 0.12242604505935237,
+      "studies": 14
+    },
+    {
+      "candidate": "GABA",
+      "score": 0.1209859761513822,
+      "studies": 16
+    },
+    {
+      "candidate": "CCAP",
+      "score": 0.11819331915695405,
+      "studies": 9
+    },
+    {
+      "candidate": "FMRFamide",
+      "score": 0.11263492234394767,
+      "studies": 14
+    },
+    {
+      "candidate": "kinin",
+      "score": 0.1114640251944766,
+      "studies": 12
+    },
+    {
+      "candidate": "allatostatin",
+      "score": 0.1104748189819924,
+      "studies": 17
+    },
+    {
+      "candidate": "ITP",
+      "score": 0.10474482517294285,
+      "studies": 10
+    },
+    {
+      "candidate": "hugin",
+      "score": 0.10383300584102717,
+      "studies": 9
+    },
+    {
+      "candidate": "ETH",
+      "score": 0.10246022987268175,
+      "studies": 10
+    },
+    {
+      "candidate": "leucokinin",
+      "score": 0.09677734112136954,
+      "studies": 12
+    },
+    {
+      "candidate": "myosuppressin",
+      "score": 0.09672014212268848,
+      "studies": 8
+    },
+    {
+      "candidate": "DH44",
+      "score": 0.09495370245753815,
+      "studies": 10
+    },
+    {
+      "candidate": "NPFR",
+      "score": 0.08947269252510026,
+      "studies": 9
+    }
+  ]
+}

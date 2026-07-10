@@ -1,0 +1,270 @@
+{
+  "biased_n_candidates": 29,
+  "unbiased_n_candidates": 30,
+  "shared": 18,
+  "only_biased": 11,
+  "only_unbiased": 12,
+  "ranking_changes": [
+    {
+      "candidate": "PDF",
+      "biased_rank": 14,
+      "unbiased_rank": 1,
+      "delta": 13
+    },
+    {
+      "candidate": "NPF",
+      "biased_rank": 4,
+      "unbiased_rank": 2,
+      "delta": 2
+    },
+    {
+      "candidate": "dopamine",
+      "biased_rank": 6,
+      "unbiased_rank": 3,
+      "delta": 3
+    },
+    {
+      "candidate": "octopamine",
+      "biased_rank": 2,
+      "unbiased_rank": 4,
+      "delta": -2
+    },
+    {
+      "candidate": "serotonin",
+      "biased_rank": 13,
+      "unbiased_rank": 5,
+      "delta": 8
+    },
+    {
+      "candidate": "sNPF",
+      "biased_rank": 3,
+      "unbiased_rank": 6,
+      "delta": -3
+    },
+    {
+      "candidate": "AKH",
+      "biased_rank": 1,
+      "unbiased_rank": 7,
+      "delta": -6
+    },
+    {
+      "candidate": "sulfakinin",
+      "biased_rank": 11,
+      "unbiased_rank": 9,
+      "delta": 2
+    },
+    {
+      "candidate": "ILP",
+      "biased_rank": 8,
+      "unbiased_rank": 10,
+      "delta": -2
+    },
+    {
+      "candidate": "corazonin",
+      "biased_rank": 15,
+      "unbiased_rank": 11,
+      "delta": 4
+    },
+    {
+      "candidate": "tachykinin",
+      "biased_rank": 7,
+      "unbiased_rank": 13,
+      "delta": -6
+    },
+    {
+      "candidate": "MIP",
+      "biased_rank": 17,
+      "unbiased_rank": 15,
+      "delta": 2
+    },
+    {
+      "candidate": "SIFamide",
+      "biased_rank": 12,
+      "unbiased_rank": 17,
+      "delta": -5
+    },
+    {
+      "candidate": "CCAP",
+      "biased_rank": 28,
+      "unbiased_rank": 20,
+      "delta": 8
+    },
+    {
+      "candidate": "FMRFamide",
+      "biased_rank": 21,
+      "unbiased_rank": 21,
+      "delta": 0
+    },
+    {
+      "candidate": "ITP",
+      "biased_rank": 16,
+      "unbiased_rank": 24,
+      "delta": -8
+    },
+    {
+      "candidate": "myosuppressin",
+      "biased_rank": 20,
+      "unbiased_rank": 28,
+      "delta": -8
+    },
+    {
+      "candidate": "DH44",
+      "biased_rank": 18,
+      "unbiased_rank": 29,
+      "delta": -11
+    }
+  ],
+  "new_in_unbiased": [
+    {
+      "candidate": "tyramine",
+      "rank": 8,
+      "score": 0.1845895803612285,
+      "studies": 38,
+      "evidence_count": 48,
+      "evidence_levels": {
+        "peptide": 12,
+        "review_mention": 7,
+        "functional": 26,
+        "transcript": 3
+      }
+    },
+    {
+      "candidate": "neuropeptides",
+      "rank": 12,
+      "score": 0.0721699954240801,
+      "studies": 23,
+      "evidence_count": 23,
+      "evidence_levels": {
+        "review_mention": 11,
+        "transcript": 9,
+        "peptide": 2,
+        "functional": 1
+      }
+    },
+    {
+      "candidate": "AstA",
+      "rank": 14,
+      "score": 0.06833093321848671,
+      "studies": 11,
+      "evidence_count": 18,
+      "evidence_levels": {
+        "functional": 14,
+        "peptide": 2,
+        "transcript": 1,
+        "review_mention": 1
+      }
+    },
+    {
+      "candidate": "DH31",
+      "rank": 16,
+      "score": 0.06323854001238191,
+      "studies": 12,
+      "evidence_count": 19,
+      "evidence_levels": {
+        "review_mention": 6,
+        "functional": 11,
+        "peptide": 2
+      }
+    },
+    {
+      "candidate": "histamine",
+      "rank": 18,
+      "score": 0.061213022529676184,
+      "studies": 14,
+      "evidence_count": 15,
+      "evidence_levels": {
+        "peptide": 7,
+        "functional": 6,
+        "review_mention": 2
+      }
+    },
+    {
+      "candidate": "GABA",
+      "rank": 19,
+      "score": 0.0604929880756911,
+      "studies": 16,
+      "evidence_count": 16,
+      "evidence_levels": {
+        "review_mention": 6,
+        "peptide": 3,
+        "transcript": 2,
+        "functional": 5
+      }
+    },
+    {
+      "candidate": "kinin",
+      "rank": 22,
+      "score": 0.0557320125972383,
+      "studies": 12,
+      "evidence_count": 16,
+      "evidence_levels": {
+        "functional": 8,
+        "transcript": 3,
+        "peptide": 1,
+        "review_mention": 4
+      }
+    },
+    {
+      "candidate": "allatostatin",
+      "rank": 23,
+      "score": 0.0552374094909962,
+      "studies": 17,
+      "evidence_count": 21,
+      "evidence_levels": {
+        "review_mention": 14,
+        "functional": 1,
+        "peptide": 4,
+        "transcript": 2
+      }
+    },
+    {
+      "candidate": "hugin",
+      "rank": 25,
+      "score": 0.051916502920513585,
+      "studies": 9,
+      "evidence_count": 14,
+      "evidence_levels": {
+        "functional": 9,
+        "release": 1,
+        "transcript": 3,
+        "peptide": 1
+      }
+    },
+    {
+      "candidate": "ETH",
+      "rank": 26,
+      "score": 0.05123011493634087,
+      "studies": 10,
+      "evidence_count": 14,
+      "evidence_levels": {
+        "functional": 9,
+        "review_mention": 4,
+        "peptide": 1
+      }
+    },
+    {
+      "candidate": "leucokinin",
+      "rank": 27,
+      "score": 0.04838867056068477,
+      "studies": 12,
+      "evidence_count": 14,
+      "evidence_levels": {
+        "functional": 5,
+        "review_mention": 7,
+        "release": 1,
+        "peptide": 1
+      }
+    },
+    {
+      "candidate": "NPFR",
+      "rank": 30,
+      "score": 0.04473634626255013,
+      "studies": 9,
+      "evidence_count": 12,
+      "evidence_levels": {
+        "transcript": 5,
+        "functional": 7
+      }
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+You are a neurobiology research assistant. This paper is a REVIEW article. Your task is to ENUMERATE every signaling molecule (neuropeptide, biogenic amine, peptide hormone, neurotransmitter) mentioned in the review that is relevant to the focus topic. This is the candidate-universe expansion path — your goal is COMPLETENESS, not evidence-depth.
+
+PAPER TITLE: {title}
+PAPER TEXT (may be abstract or full text excerpt):
+{abstract}
+
+FOCUS TOPIC: {topic}
+FOCUS BEHAVIOR: {behavior}
+TARGET ENTITY TYPE: {entity_type}
+
+For EVERY molecule mentioned in the review text that fits the candidate types below, extract one entry. Be exhaustive — a molecule mentioned only once, even in passing, still counts if it plausibly relates to the focus topic.
+
+Candidate types (use exactly these labels):
+- "neuropeptide"        - NPF, sNPF, AKH, allatostatin, CCHamide, Hugin, MIP, sulfakinin, tachykinin, leucokinin, corazonin, DH31, CAPA, pyrokinin, FMRFamide, SIFamide, proctolin, ETH, eclosion hormone, drosokinin, IFamide, PDF, allatotropin, etc.
+- "biogenic_amine"      - octopamine, dopamine, serotonin, tyramine, histamine
+- "peptide_hormone"     - insulin-like peptides (ILP), insulin, AKH-related hormones
+- "neurotransmitter"    - GABA, glutamate, acetylcholine
+- "other"               - NO (gas), lipid signals, etc.
+
+For each entry, return exactly these fields:
+
+- candidate: molecule name AS IT APPEARS in the paper (e.g., "dNPF", "neuropeptide F", "short neuropeptide F", "Hugin peptide")
+- core_name: normalized canonical name for cross-paper aggregation. Use the most common short form. Map variants: "dNPF"/"DmelNPF"/"neuropeptide F" -> "NPF"; "NPF1a"/"NPF1" -> "NPF1a" if locust context; "myoinhibitory peptide" -> "MIP"; "drosulfakinin"/"DSK" -> "sulfakinin"; "DTK" -> "tachykinin". When unsure, use the candidate name as-is.
+- candidate_type: one of the labels above
+- species: Latin name if the review states a species context for this molecule, else "unknown"
+- evidence_level: MUST be the literal string "review_mention" (this is a review paper — no original experiment)
+- direction: MUST be the literal string "unchanged"
+- quote: DIRECT VERBATIM QUOTE (max 200 characters) from the PAPER TEXT where the molecule is mentioned. This is mandatory and grounds the entry — copy the exact sentence or clause.
+- confidence: your confidence 0.0-1.0 that (a) the molecule is genuinely mentioned (not hallucinated) AND (b) it is plausibly relevant to the focus topic. Reviews often mention molecules in passing; assign confidence < 0.5 for tangential mentions, >= 0.8 for molecules the review discusses substantively in the context of feeding/metabolism/locomotion/starvation.
+
+Rules:
+- **EXHAUSTIVE enumeration is the goal.** A review listing 25 neuropeptides should yield ~25 entries, not 3. Do not stop at "the most important ones" — the downstream pipeline needs the full candidate universe.
+- **Every quote MUST be a verbatim substring of PAPER TEXT above.** If you cannot locate an exact sentence mentioning the molecule, DO NOT include that entry. Empty quotes are forbidden; fabricated quotes are forbidden.
+- **Do NOT extract receptors, enzymes, or drugs as candidates.** Skip entries like "NPF receptor", "AKHR", "D2-like receptor", "neprilysin", "flupenthixol". Only extract the signaling molecule (ligand) itself.
+- **Do NOT extract non-signaling molecules.** Skip juvenile hormone (JH, lipid hormone), ecdysone (steroid), trehalose (sugar), etc. — these are not neuropeptides/amines/peptide hormones.
+- **Confidence < 0.3 entries will be dropped automatically** — set confidence honestly.
+- If a molecule is mentioned multiple times in different contexts, create ONE entry with the most informative quote.
+- Map synonyms to the same core_name across the review (e.g., if the review uses both "NPF" and "neuropeptide F", they share core_name "NPF").
+
+Return a JSON array. No text outside the array. If the review genuinely mentions zero relevant molecules, return [].
+
+Example (FORMAT ONLY — do NOT copy these candidate names or quotes):
+[
+  {
+    "candidate": "<molecule name as in paper>",
+    "core_name": "<canonical name>",
+    "candidate_type": "neuropeptide",
+    "species": "Drosophila melanogaster",
+    "evidence_level": "review_mention",
+    "direction": "unchanged",
+    "quote": "<exact sentence copied from PAPER TEXT above>",
+    "confidence": 0.9
+  }
+]
+
+Now enumerate ALL relevant signaling molecules mentioned in the review above. Return only the JSON array.

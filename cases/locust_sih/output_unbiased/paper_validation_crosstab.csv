@@ -1,0 +1,23 @@
+﻿paper_candidate,tier,role,qpcr_result,xscreen_match,xscreen_rank,studies,evidence,levels,hit_top30,hit_top50
+NPF1a,1,主角（neuropeptidomic 选中）,pre-Vite 脑 -48.1%; Vite 脑 +78.6%（大变化，脑内）,NPF,3,89,139,FU:75 PE:18 RE:6 TR:29 RE:11,✓,✓
+sNPF,1,neuropeptidomic 候选，qPCR 后淘汰,Vite OL -21.8%（小变化，外周）,sNPF,6,75,113,FU:52 PE:16 RE:5 TR:26 RE:14,✓,✓
+DH,1,neuropeptidomic 候选，qPCR 后淘汰,pre-Vite AG -26%（小变化，外周）,DH31,20,12,19,FU:11 PE:2 RE:6,✓,✓
+AT,1,neuropeptidomic 候选，qPCR 后淘汰,Vite AG -16.6%（小变化，外周）,allatotropin,24,11,13,FU:2 TR:3 RE:8,✓,✓
+PDF,2,引物测了，未在正文展开,—,PDF,1,97,134,FU:63 PE:41 RE:8 TR:10 RE:12,✓,✓
+AKH I,2,Discussion（代谢互补）,AKH II pre-Vite 降; AKH I Vite 升,AKH,7,72,121,FU:40 PE:32 TR:29 RE:20,✓,✓
+AKH II,2,Discussion（代谢互补）,见 AKH I,AKH,7,72,121,FU:40 PE:32 TR:29 RE:20,✓,✓
+ILP1,2,引言提及（ILPs antagonize SIH）,—,ILP,11,22,25,FU:5 PE:4 RE:3 TR:5 RE:8,✓,✓
+TK,2,引物测了，未在正文展开,—,tachykinin,13,20,23,FU:5 PE:2 RE:1 TR:1 RE:14,✓,✓
+AST-B,2,引物测了，未在正文展开,—,MIP,17,15,19,FU:7 PE:4 RE:1 RE:7,✓,✓
+FMRFa,2,引物测了，未在正文展开,—,FMRFamide,18,14,17,FU:6 PE:2 TR:1 RE:8,✓,✓
+Kin,2,引物测了，未在正文展开,—,leucokinin,22,12,14,FU:5 PE:1 RE:1 RE:7,✓,✓
+AST-A,2,引物测了，未在正文展开,—,AstA,23,11,18,FU:14 PE:2 TR:1 RE:1,✓,✓
+ITP,2,引物测了，未在正文展开,—,ITP,25,10,16,FU:8 PE:3 TR:2 RE:3,✓,✓
+CCAP,2,引物测了，未在正文展开,—,CCAP,28,9,19,FU:11 PE:3 TR:5,✓,✓
+AST-C,2,引物测了，未在正文展开,—,AstC,44,6,10,FU:5 PE:3 RE:1 TR:1,△,✓
+Orc,2,引物测了，未在正文展开,—,orcokinin,65,4,5,FU:2 PE:2 TR:1,△,△
+NPLP,2,引物测了，未在正文展开,—,Nplp1,81,3,4,FU:2 TR:2,△,△
+Dms,2,引物测了，未在正文展开,—,DMS,119,2,3,FU:2 PE:1,△,△
+ALP,2,引物测了，未在正文展开,—,Bursicon alpha,257,1,1,TR:1,△,△
+IRP,2,引物测了，未在正文展开,—,(未匹配),—,0,0,,✗,✗
+NTL,2,引物测了，未在正文展开,—,(未匹配),—,0,0,,✗,✗

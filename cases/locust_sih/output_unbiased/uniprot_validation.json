@@ -1,0 +1,1114 @@
+{
+  "total_candidates": 389,
+  "classification": {
+    "noise": [
+      "5-HT",
+      "5-HTP"
+    ],
+    "receptor": [
+      "5-HT1A",
+      "ACPR",
+      "AKHR",
+      "Amdop1",
+      "Amdop2",
+      "Amdop3",
+      "Amoa1",
+      "Amtyr1",
+      "CCHa2R",
+      "DHR",
+      "NPFR",
+      "NPYLR7",
+      "SIFR",
+      "SIFaR",
+      "biogenic amine receptors",
+      "neuropeptide and protein hormone receptors",
+      "neuropeptide receptor B",
+      "neuropeptide receptors",
+      "tachykinin-related peptide receptor-like"
+    ],
+    "drug": [
+      "6,7-ADTN"
+    ],
+    "enzyme": [
+      "ACE"
+    ],
+    "known_peptide": [
+      "ACP",
+      "AKH",
+      "AKH I",
+      "AST-C",
+      "AT",
+      "Allatostatin A",
+      "Allatostatin-C",
+      "AstA",
+      "AstC",
+      "Bommyosuppressin",
+      "Bursicon",
+      "Bursicon alpha",
+      "Bursicon beta",
+      "CAPA",
+      "CAPA pyrokinin",
+      "CAPA-1",
+      "CAPA-2",
+      "CAPA-PK analogue 1895",
+      "CAPA-PVK",
+      "CAPA-PVK analogue 2315",
+      "CCAP",
+      "CCHa1",
+      "CCHa2",
+      "CCHamide",
+      "CCHamide-1",
+      "CCHamide-2",
+      "CCHamide1",
+      "CCHamide2",
+      "CNMa",
+      "CNMamide",
+      "CRZ",
+      "Capa",
+      "Cch-amide2",
+      "Corazonin",
+      "Crz",
+      "DH31",
+      "DH44",
+      "DILP",
+      "DILP1",
+      "DMS",
+      "DPKQDFMRFamide",
+      "DTK",
+      "Dh31",
+      "Dh44",
+      "Diuretic Hormone 31",
+      "ETH",
+      "FLRFamide",
+      "FMRFa",
+      "FMRFamide",
+      "FMRFamide-related peptides",
+      "GNDNFMRFamide",
+      "GSRYamide",
+      "Hugin",
+      "IFamide",
+      "ILP1",
+      "ITP",
+      "LK",
+      "Leucokinin",
+      "MIP",
+      "Mas-FLRFamide I",
+      "Mas-FLRFamide II",
+      "Mas-FLRFamide III",
+      "Mas-allatotropin",
+      "N-acetyldopamine",
+      "N-acetyloctopamine",
+      "N-acetyltyramine",
+      "NPF",
+      "NPLP-1-5",
+      "NPLP1",
+      "Nplp1",
+      "Orcokinin",
+      "PBAN",
+      "PDF",
+      "PTTH",
+      "RFamide",
+      "RPCH",
+      "RYamide",
+      "SIFa",
+      "SIFamide",
+      "Tachykinin",
+      "adenosine",
+      "allatostatin",
+      "allatostatin A",
+      "allatostatin C",
+      "allatostatin-A",
+      "allatostatin-C",
+      "allatotropin",
+      "allatotropin-like",
+      "bursicon",
+      "bursicon beta",
+      "capa-1",
+      "corazonin",
+      "crustacean cardioactive peptide",
+      "cydiastatin 2",
+      "cydiastatin 3",
+      "cydiastatin 4",
+      "dRYamide-1",
+      "dRYamide-2",
+      "diuretic hormone",
+      "drosokinin",
+      "ecdysis triggering hormone",
+      "eclosion hormone",
+      "elevenin",
+      "hugin",
+      "inotocin",
+      "insulin",
+      "kinin",
+      "leucokinin",
+      "leucomyosuppressin",
+      "myosuppressin",
+      "neuroparsin",
+      "neuropeptide",
+      "orcokinin",
+      "ovary ecdysteroidogenic hormone",
+      "pburs",
+      "proctolin",
+      "proctolin-like peptide",
+      "pyrokinin",
+      "red pigment concentrating hormone",
+      "sNPF",
+      "sex peptide",
+      "sulfakinin",
+      "tachykinin",
+      "tachykinin-related peptide",
+      "tryptopyrokinin",
+      "vasopressin"
+    ],
+    "plausible_novel": [
+      "AKDNFIRFamide",
+      "AgRP",
+      "AjCT2",
+      "ApTK",
+      "ArCRH",
+      "BMS",
+      "Bacopa monnieri",
+      "BjalphaIT",
+      "BmGT1",
+      "BmSLC6-15",
+      "CAP2b/PVK",
+      "CGRP",
+      "CHH-L",
+      "CabTRP Ia",
+      "DILP8",
+      "Dilp8",
+      "FCAP",
+      "FGLa/AST",
+      "GFP-tagged neuropeptide",
+      "GLWamide",
+      "GPA2/GPB5",
+      "GPB5",
+      "GPHA",
+      "Hdc",
+      "Helze-HrTH",
+      "ITP-L",
+      "LFRFamide",
+      "Limostatin",
+      "MOIH",
+      "Mas-MIP III",
+      "Mas-MIP V",
+      "Mas-MIP VI",
+      "Mem-CC",
+      "NGFFYamide",
+      "NHD",
+      "NMU",
+      "NPF1a",
+      "NPF1b",
+      "NVP",
+      "NVP-like",
+      "Nucb2",
+      "OEH",
+      "PDF-1",
+      "PDF-2",
+      "PETH",
+      "PK-PEG(8)",
+      "POMC",
+      "Pea-FMRFa-7",
+      "Ptyfl-AKH-I",
+      "Ptyfl-AKH-II",
+      "Pvf2",
+      "RIMS1",
+      "RWamide",
+      "Rhimi-K-14",
+      "Rhopr-ILP",
+      "RhoprMS",
+      "SALMFamide",
+      "SLC18A2",
+      "Tem-HrTH",
+      "Upd1",
+      "Upd2",
+      "[N7]-Mem-CC",
+      "allatoregulatory neuropeptides",
+      "antidiuretic hormones",
+      "biogenic amine",
+      "biogenic amine neuromodulator",
+      "biogenic amines",
+      "calcitonin-type",
+      "dNepYr",
+      "ghrelin",
+      "gonadotropin-releasing hormone-type",
+      "hyperglycaemic hormone",
+      "kinin-precursor peptide",
+      "leptin-like factor",
+      "leukokinin",
+      "levodopa",
+      "limostatin",
+      "luqin",
+      "magro",
+      "natalisin",
+      "neuromodulators and neuropeptides",
+      "orexin",
+      "other neuroactive peptides",
+      "sericotropin",
+      "somatostatin",
+      "spiperone",
+      "thyrotropin-releasing hormone-type"
+    ],
+    "in_uniprot": [
+      "AKH II",
+      "AST",
+      "AST-1",
+      "AST-2",
+      "ATRP",
+      "Allostatin A",
+      "Allostatin C",
+      "AmTRP",
+      "AmTRP-5",
+      "BRFa",
+      "BmK5",
+      "CAP",
+      "CAP2b",
+      "CART",
+      "CHH",
+      "CRF-related DH",
+      "CRF/DH",
+      "CT-DH",
+      "CT/DH",
+      "DH",
+      "DH(31)",
+      "DH-PBAN",
+      "DILP2",
+      "DILP3",
+      "DILP4",
+      "DILP5",
+      "DILP6",
+      "DILP7",
+      "Del-CC",
+      "Eiger",
+      "FaRP",
+      "GIH",
+      "Gad",
+      "Gdh",
+      "GnRH",
+      "HTH",
+      "Hedgehog",
+      "HrTH",
+      "IGF",
+      "ILP",
+      "ILP2",
+      "ILP3",
+      "ILP4",
+      "ILP5",
+      "ILP6",
+      "ILP7",
+      "ITG",
+      "ITG-like",
+      "ITPL",
+      "Imp-L2",
+      "L-DOPA",
+      "LPK",
+      "Locusta-diuretic hormone",
+      "Lom-MT-II",
+      "MIH",
+      "Manduca diuresin",
+      "Mas-AT",
+      "N-acetyl-L-tyrosine",
+      "N-acetylserotonin",
+      "NEP2",
+      "NPF1",
+      "NPF2",
+      "NPY",
+      "Nesfatin-1",
+      "Npy",
+      "PACAP",
+      "PDH",
+      "PRXamide",
+      "PT",
+      "PTSP",
+      "S6K",
+      "TE",
+      "TK",
+      "TRP",
+      "Tk",
+      "Tph",
+      "Unpaired 1",
+      "Unpaired 2",
+      "Upd3",
+      "VIH",
+      "VIP",
+      "allatostatin-B",
+      "amines",
+      "amino acids",
+      "antidiuretic hormone",
+      "bioactive peptides",
+      "catecholamine",
+      "cholecystokinin",
+      "corticotropin-releasing hormone-type",
+      "crustacean cardioacceleratory peptide",
+      "diapause hormone",
+      "dilp2",
+      "dilp3",
+      "dilp5",
+      "diuretic hormones",
+      "ecdysone",
+      "enteroendocrine insect peptides",
+      "galanin",
+      "glucagon",
+      "glutamine",
+      "glycoprotein hormone alpha",
+      "gut-peptide hormones",
+      "helicostatin 1",
+      "hormones",
+      "insulin-like peptide",
+      "insulin-like peptides",
+      "kisspeptin",
+      "l-dopa",
+      "leptin",
+      "neuromedin U",
+      "neuromodulators",
+      "neuropeptide and neurohormonal signaling",
+      "neuropeptide hormones",
+      "neuropeptide precursors",
+      "neuropeptide signaling",
+      "neuropeptide signaling genes",
+      "neuropeptide signaling pathway",
+      "neuropeptide signals",
+      "neuropeptides",
+      "neurotransmitters",
+      "other signalling molecules",
+      "pdf-1",
+      "pdf-2",
+      "peptide hormone",
+      "peptide hormones",
+      "peptidergic",
+      "peptides",
+      "periviscerokinin",
+      "phosphatidylserine",
+      "pigment dispersing hormone",
+      "pigment-dispersing hormone",
+      "prominin-like",
+      "regulatory peptides",
+      "relaxin",
+      "spermidine",
+      "tryptophan",
+      "tyrosine metabolism pathway",
+      "unpaired 2",
+      "vasopressin/oxytocin-type"
+    ],
+    "metabolite": [
+      "ATP"
+    ],
+    "known_amine": [
+      "GABA",
+      "acetylcholine",
+      "adrenaline",
+      "dopamine",
+      "epinephrine",
+      "glutamate",
+      "histamine",
+      "melatonin",
+      "noradrenaline",
+      "norepinephrine",
+      "octopamine",
+      "serotonin",
+      "tyramine"
+    ]
+  },
+  "objective_precision_proxy": {
+    "valid_signals": 365,
+    "type_errors": 24,
+    "valid_rate": 0.9383033419023136
+  },
+  "uniprot_hits_detail": {
+    "AKH II": {
+      "accession": "P35807",
+      "protein_name": "Adipokinetic prohormone type 2",
+      "organism": "Schistocerca nitens"
+    },
+    "AST": {
+      "accession": "Q9VC44",
+      "protein_name": "Allatostatin-A",
+      "organism": "Drosophila melanogaster"
+    },
+    "AST-1": {
+      "accession": "Q9VC44",
+      "protein_name": "Allatostatin-A",
+      "organism": "Drosophila melanogaster"
+    },
+    "AST-2": {
+      "accession": "Q9VC44",
+      "protein_name": "Allatostatin-A",
+      "organism": "Drosophila melanogaster"
+    },
+    "ATRP": {
+      "accession": "P86555",
+      "protein_name": "Allatotropin-related peptide",
+      "organism": "Pyrrhocoris apterus"
+    },
+    "Allostatin A": {
+      "accession": "Q9VVF7",
+      "protein_name": "Allatostatins MIP",
+      "organism": "Drosophila melanogaster"
+    },
+    "Allostatin C": {
+      "accession": "Q9VVF7",
+      "protein_name": "Allatostatins MIP",
+      "organism": "Drosophila melanogaster"
+    },
+    "AmTRP": {
+      "accession": "Q868G6",
+      "protein_name": "Tachykinins",
+      "organism": "Apis mellifera"
+    },
+    "AmTRP-5": {
+      "accession": "Q868G6",
+      "protein_name": "Tachykinins",
+      "organism": "Apis mellifera"
+    },
+    "BRFa": {
+      "accession": "Q1MX22",
+      "protein_name": "FMRFamide-related peptides",
+      "organism": "Bombyx mori"
+    },
+    "BmK5": {
+      "accession": "B9WZ56",
+      "protein_name": "Putative neuropeptide precursor protein",
+      "organism": "Bombyx mori"
+    },
+    "CAP": {
+      "accession": "Q02910",
+      "protein_name": "Calphotin",
+      "organism": "Drosophila melanogaster"
+    },
+    "CAP2b": {
+      "accession": "Q9NIP6",
+      "protein_name": "Cardio acceleratory peptide 2b",
+      "organism": "Drosophila melanogaster"
+    },
+    "CART": {
+      "accession": "Q9VIK2",
+      "protein_name": "Carcinine transporter",
+      "organism": "Drosophila melanogaster"
+    },
+    "CHH": {
+      "accession": "Q9NL55",
+      "protein_name": "CHH-like protein",
+      "organism": "Bombyx mori"
+    },
+    "CRF-related DH": {
+      "accession": "P82014",
+      "protein_name": "Diuretic hormone 1",
+      "organism": "Hyles lineata"
+    },
+    "CRF/DH": {
+      "accession": "P82373",
+      "protein_name": "Diuretic hormone class 1",
+      "organism": "Diploptera punctata"
+    },
+    "CT-DH": {
+      "accession": "Q9VQ56",
+      "protein_name": "Fez family zinc finger protein erm",
+      "organism": "Drosophila melanogaster"
+    },
+    "CT/DH": {
+      "accession": "Q9VQ56",
+      "protein_name": "Fez family zinc finger protein erm",
+      "organism": "Drosophila melanogaster"
+    },
+    "DH": {
+      "accession": "Q9VLK4",
+      "protein_name": "Diuretic hormone class 2",
+      "organism": "Drosophila melanogaster"
+    },
+    "DH(31)": {
+      "accession": "Q9VLK4",
+      "protein_name": "Diuretic hormone class 2",
+      "organism": "Drosophila melanogaster"
+    },
+    "DH-PBAN": {
+      "accession": "P09971",
+      "protein_name": "PBAN-type neuropeptides",
+      "organism": "Bombyx mori"
+    },
+    "DILP2": {
+      "accession": "Q9VT51",
+      "protein_name": "Insulin-like peptide 2",
+      "organism": "Drosophila melanogaster"
+    },
+    "DILP3": {
+      "accession": "Q9VT52",
+      "protein_name": "Insulin-like peptide 3",
+      "organism": "Drosophila melanogaster"
+    },
+    "DILP4": {
+      "accession": "Q9VT53",
+      "protein_name": "Insulin-like peptide 4",
+      "organism": "Drosophila melanogaster"
+    },
+    "DILP5": {
+      "accession": "Q7KUD5",
+      "protein_name": "Insulin-like peptide 5",
+      "organism": "Drosophila melanogaster"
+    },
+    "DILP6": {
+      "accession": "Q9W4Z4",
+      "protein_name": "Insulin-like peptide 6",
+      "organism": "Drosophila melanogaster"
+    },
+    "DILP7": {
+      "accession": "Q9W4Q9",
+      "protein_name": "Insulin-like peptide 7",
+      "organism": "Drosophila melanogaster"
+    },
+    "Del-CC": {
+      "accession": "Q9VA73",
+      "protein_name": "Electrogenic aspartate/glutamate antiporter Aralar, mitochondrial",
+      "organism": "Drosophila melanogaster"
+    },
+    "Eiger": {
+      "accession": "Q8MUJ1",
+      "protein_name": "Tumor necrosis factor family member eiger",
+      "organism": "Drosophila melanogaster"
+    },
+    "FaRP": {
+      "accession": "P84307",
+      "protein_name": "SchistoFLRFamide",
+      "organism": "Schistocerca gregaria"
+    },
+    "GIH": {
+      "accession": "Q9NL55",
+      "protein_name": "CHH-like protein",
+      "organism": "Bombyx mori"
+    },
+    "Gad": {
+      "accession": "P20228",
+      "protein_name": "Glutamate decarboxylase",
+      "organism": "Drosophila melanogaster"
+    },
+    "Gdh": {
+      "accession": "P54385",
+      "protein_name": "Glutamate dehydrogenase, mitochondrial",
+      "organism": "Drosophila melanogaster"
+    },
+    "GnRH": {
+      "accession": "A0A2L0VBG2",
+      "protein_name": "Adipokinetic hormone/corazonin-related peptide receptor variant I",
+      "organism": "Aedes aegypti"
+    },
+    "HTH": {
+      "accession": "O46339",
+      "protein_name": "Homeobox protein homothorax",
+      "organism": "Drosophila melanogaster"
+    },
+    "Hedgehog": {
+      "accession": "P56674",
+      "protein_name": "Protein hedgehog",
+      "organism": "Drosophila hydei"
+    },
+    "HrTH": {
+      "accession": "P61855",
+      "protein_name": "Adipokinetic hormone",
+      "organism": "Drosophila melanogaster"
+    },
+    "IGF": {
+      "accession": "Q9VT52",
+      "protein_name": "Insulin-like peptide 3",
+      "organism": "Drosophila melanogaster"
+    },
+    "ILP": {
+      "accession": "Q24307",
+      "protein_name": "Death-associated inhibitor of apoptosis 2",
+      "organism": "Drosophila melanogaster"
+    },
+    "ILP2": {
+      "accession": "Q9VT51",
+      "protein_name": "Insulin-like peptide 2",
+      "organism": "Drosophila melanogaster"
+    },
+    "ILP3": {
+      "accession": "Q9VT52",
+      "protein_name": "Insulin-like peptide 3",
+      "organism": "Drosophila melanogaster"
+    },
+    "ILP4": {
+      "accession": "Q9VT53",
+      "protein_name": "Insulin-like peptide 4",
+      "organism": "Drosophila melanogaster"
+    },
+    "ILP5": {
+      "accession": "Q7KUD5",
+      "protein_name": "Insulin-like peptide 5",
+      "organism": "Drosophila melanogaster"
+    },
+    "ILP6": {
+      "accession": "Q9W4Z4",
+      "protein_name": "Insulin-like peptide 6",
+      "organism": "Drosophila melanogaster"
+    },
+    "ILP7": {
+      "accession": "Q9W4Q9",
+      "protein_name": "Insulin-like peptide 7",
+      "organism": "Drosophila melanogaster"
+    },
+    "ITG": {
+      "accession": "C0HKU1",
+      "protein_name": "ITG-like peptide",
+      "organism": "Agrotis ipsilon"
+    },
+    "ITG-like": {
+      "accession": "C0HKU1",
+      "protein_name": "ITG-like peptide",
+      "organism": "Agrotis ipsilon"
+    },
+    "ITPL": {
+      "accession": "Q26492",
+      "protein_name": "Ion transport peptide-like",
+      "organism": "Schistocerca gregaria"
+    },
+    "Imp-L2": {
+      "accession": "Q09024",
+      "protein_name": "Neural/ectodermal development factor IMP-L2",
+      "organism": "Drosophila melanogaster"
+    },
+    "L-DOPA": {
+      "accession": "P05031",
+      "protein_name": "Aromatic-L-amino-acid decarboxylase",
+      "organism": "Drosophila melanogaster"
+    },
+    "LPK": {
+      "accession": "P13049",
+      "protein_name": "Leukopyrokinin",
+      "organism": "Rhyparobia maderae"
+    },
+    "Locusta-diuretic hormone": {
+      "accession": "P16339",
+      "protein_name": "Locupressin",
+      "organism": "Locusta migratoria"
+    },
+    "Lom-MT-II": {
+      "accession": "P41490",
+      "protein_name": "Locustamyotropin-4",
+      "organism": "Locusta migratoria"
+    },
+    "MIH": {
+      "accession": "Q9NL55",
+      "protein_name": "CHH-like protein",
+      "organism": "Bombyx mori"
+    },
+    "Manduca diuresin": {
+      "accession": "P24858",
+      "protein_name": "Diuretic hormone 2",
+      "organism": "Manduca sexta"
+    },
+    "Mas-AT": {
+      "accession": "Q9VZH2",
+      "protein_name": "Protein masquerade",
+      "organism": "Drosophila melanogaster"
+    },
+    "N-acetyl-L-tyrosine": {
+      "accession": "Q95RC0",
+      "protein_name": "N-alpha-acetyltransferase 30A",
+      "organism": "Drosophila melanogaster"
+    },
+    "N-acetylserotonin": {
+      "accession": "Q9VMG0",
+      "protein_name": "Arylalkylamine N-acetyltransferase-like 2",
+      "organism": "Drosophila melanogaster"
+    },
+    "NEP2": {
+      "accession": "A0A0B4K692",
+      "protein_name": "Neprilysin-2",
+      "organism": "Drosophila melanogaster"
+    },
+    "NPF1": {
+      "accession": "Q9TWD6",
+      "protein_name": "Neuropeptide NPF-1",
+      "organism": "Leptinotarsa decemlineata"
+    },
+    "NPF2": {
+      "accession": "P85514",
+      "protein_name": "Neuropeptide NPF-2",
+      "organism": "Leptinotarsa decemlineata"
+    },
+    "NPY": {
+      "accession": "P25931",
+      "protein_name": "RYamide receptor",
+      "organism": "Drosophila melanogaster"
+    },
+    "Nesfatin-1": {
+      "accession": "Q9VVK7",
+      "protein_name": "Nucleobindin",
+      "organism": "Drosophila melanogaster"
+    },
+    "Npy": {
+      "accession": "P25931",
+      "protein_name": "RYamide receptor",
+      "organism": "Drosophila melanogaster"
+    },
+    "PACAP": {
+      "accession": "Q24049",
+      "protein_name": "Amnesiac neuropeptides",
+      "organism": "Drosophila melanogaster"
+    },
+    "PDH": {
+      "accession": "E2AX75",
+      "protein_name": "Pigment-dispersing hormone peptides",
+      "organism": "Camponotus floridanus"
+    },
+    "PRXamide": {
+      "accession": "Q8ITC9",
+      "protein_name": "Pyrokinin-1 receptor",
+      "organism": "Drosophila melanogaster"
+    },
+    "PT": {
+      "accession": "Q00725",
+      "protein_name": "Salivary glue protein Sgs-4",
+      "organism": "Drosophila melanogaster"
+    },
+    "PTSP": {
+      "accession": "P82003",
+      "protein_name": "Prothoracicostatic peptide",
+      "organism": "Bombyx mori"
+    },
+    "S6K": {
+      "accession": "Q24276",
+      "protein_name": "Hsp90 co-chaperone Cdc37",
+      "organism": "Drosophila melanogaster"
+    },
+    "TE": {
+      "accession": "P85826",
+      "protein_name": "Diuretic hormone class 2",
+      "organism": "Rhodnius prolixus"
+    },
+    "TK": {
+      "accession": "Q9VGE8",
+      "protein_name": "Tachykinins",
+      "organism": "Drosophila melanogaster"
+    },
+    "TRP": {
+      "accession": "P19334",
+      "protein_name": "Transient receptor potential protein",
+      "organism": "Drosophila melanogaster"
+    },
+    "Tk": {
+      "accession": "Q9VGE8",
+      "protein_name": "Tachykinins",
+      "organism": "Drosophila melanogaster"
+    },
+    "Tph": {
+      "accession": "P17276",
+      "protein_name": "Protein henna",
+      "organism": "Drosophila melanogaster"
+    },
+    "Unpaired 1": {
+      "accession": "P41596",
+      "protein_name": "Dopamine receptor 1",
+      "organism": "Drosophila melanogaster"
+    },
+    "Unpaired 2": {
+      "accession": "Q95RQ4",
+      "protein_name": "3'-5' exonuclease Snipper",
+      "organism": "Drosophila melanogaster"
+    },
+    "Upd3": {
+      "accession": "Q8IN44",
+      "protein_name": "Protein Turandot A",
+      "organism": "Drosophila melanogaster"
+    },
+    "VIH": {
+      "accession": "Q9VTY6",
+      "protein_name": "Ubiquitin-conjugating enzyme E2 C",
+      "organism": "Drosophila melanogaster"
+    },
+    "VIP": {
+      "accession": "Q9VR59",
+      "protein_name": "Inositol hexakisphosphate and diphosphoinositol-pentakisphosphate kinase",
+      "organism": "Drosophila melanogaster"
+    },
+    "allatostatin-B": {
+      "accession": "Q9VVF7",
+      "protein_name": "Allatostatins MIP",
+      "organism": "Drosophila melanogaster"
+    },
+    "amines": {
+      "accession": "P18153",
+      "protein_name": "Long form salivary protein D7L1",
+      "organism": "Aedes aegypti"
+    },
+    "amino acids": {
+      "accession": "Q9VH58",
+      "protein_name": "Very long chain fatty acid elongase F",
+      "organism": "Drosophila melanogaster"
+    },
+    "antidiuretic hormone": {
+      "accession": "P82965",
+      "protein_name": "Antidiuretic factor A",
+      "organism": "Tenebrio molitor"
+    },
+    "bioactive peptides": {
+      "accession": "Q9VLJ6",
+      "protein_name": "Angiotensin-converting enzyme-related protein",
+      "organism": "Drosophila melanogaster"
+    },
+    "catecholamine": {
+      "accession": "Q9VDC6",
+      "protein_name": "Beta-alanyl-bioamine nonribosomal peptide synthetase ebony",
+      "organism": "Drosophila melanogaster"
+    },
+    "cholecystokinin": {
+      "accession": "P09040",
+      "protein_name": "Drosulfakinins",
+      "organism": "Drosophila melanogaster"
+    },
+    "corticotropin-releasing hormone-type": {
+      "accession": "P49869",
+      "protein_name": "Probable nuclear hormone receptor HR38",
+      "organism": "Drosophila melanogaster"
+    },
+    "crustacean cardioacceleratory peptide": {
+      "accession": "Q8WRC7",
+      "protein_name": "Cardioactive peptide",
+      "organism": "Manduca sexta"
+    },
+    "diapause hormone": {
+      "accession": "P09971",
+      "protein_name": "PBAN-type neuropeptides",
+      "organism": "Bombyx mori"
+    },
+    "dilp2": {
+      "accession": "Q9VT51",
+      "protein_name": "Insulin-like peptide 2",
+      "organism": "Drosophila melanogaster"
+    },
+    "dilp3": {
+      "accession": "Q9VT52",
+      "protein_name": "Insulin-like peptide 3",
+      "organism": "Drosophila melanogaster"
+    },
+    "dilp5": {
+      "accession": "Q7KUD5",
+      "protein_name": "Insulin-like peptide 5",
+      "organism": "Drosophila melanogaster"
+    },
+    "diuretic hormones": {
+      "accession": "P82372",
+      "protein_name": "Diuretic hormone class 2",
+      "organism": "Diploptera punctata"
+    },
+    "ecdysone": {
+      "accession": "P34021",
+      "protein_name": "Ecdysone receptor",
+      "organism": "Drosophila melanogaster"
+    },
+    "enteroendocrine insect peptides": {
+      "accession": "P42787",
+      "protein_name": "Carboxypeptidase D",
+      "organism": "Drosophila melanogaster"
+    },
+    "galanin": {
+      "accession": "Q8WPA2",
+      "protein_name": "Allatostatin-A receptor",
+      "organism": "Bombyx mori"
+    },
+    "glucagon": {
+      "accession": "P12370",
+      "protein_name": "cAMP-dependent protein kinase catalytic subunit 1",
+      "organism": "Drosophila melanogaster"
+    },
+    "glutamine": {
+      "accession": "Q9VYA0",
+      "protein_name": "Glutamine-dependent NAD(+) synthetase",
+      "organism": "Drosophila melanogaster"
+    },
+    "glycoprotein hormone alpha": {
+      "accession": "D6WMZ8",
+      "protein_name": "Juvenile hormone esterase",
+      "organism": "Tribolium castaneum"
+    },
+    "gut-peptide hormones": {
+      "accession": "Q9VVF7",
+      "protein_name": "Allatostatins MIP",
+      "organism": "Drosophila melanogaster"
+    },
+    "helicostatin 1": {
+      "accession": "O44314",
+      "protein_name": "Helicostatins",
+      "organism": "Helicoverpa armigera"
+    },
+    "hormones": {
+      "accession": "Q95078",
+      "protein_name": "Cytochrome P450 18a1",
+      "organism": "Drosophila melanogaster"
+    },
+    "insulin-like peptide": {
+      "accession": "Q9VT52",
+      "protein_name": "Insulin-like peptide 3",
+      "organism": "Drosophila melanogaster"
+    },
+    "insulin-like peptides": {
+      "accession": "Q9VT52",
+      "protein_name": "Insulin-like peptide 3",
+      "organism": "Drosophila melanogaster"
+    },
+    "kisspeptin": {
+      "accession": "P0DX47",
+      "protein_name": "U-limacoditoxin(13)-As2",
+      "organism": "Acharia stimulea"
+    },
+    "l-dopa": {
+      "accession": "P05031",
+      "protein_name": "Aromatic-L-amino-acid decarboxylase",
+      "organism": "Drosophila melanogaster"
+    },
+    "leptin": {
+      "accession": "P55965",
+      "protein_name": "T-related protein",
+      "organism": "Drosophila melanogaster"
+    },
+    "neuromedin U": {
+      "accession": "Q8ITC7",
+      "protein_name": "Neuropeptides capa receptor",
+      "organism": "Drosophila melanogaster"
+    },
+    "neuromodulators": {
+      "accession": "P22270",
+      "protein_name": "Tyramine/octopamine receptor",
+      "organism": "Drosophila melanogaster"
+    },
+    "neuropeptide and neurohormonal signaling": {
+      "accession": "P41841",
+      "protein_name": "Callatostatin-5",
+      "organism": "Calliphora vomitoria"
+    },
+    "neuropeptide hormones": {
+      "accession": "O76818",
+      "protein_name": "PBAN-type neuropeptides",
+      "organism": "Agrotis ipsilon"
+    },
+    "neuropeptide precursors": {
+      "accession": "Q9NIP6",
+      "protein_name": "Cardio acceleratory peptide 2b",
+      "organism": "Drosophila melanogaster"
+    },
+    "neuropeptide signaling": {
+      "accession": "O76818",
+      "protein_name": "PBAN-type neuropeptides",
+      "organism": "Agrotis ipsilon"
+    },
+    "neuropeptide signaling genes": {
+      "accession": "Q4V4I9",
+      "protein_name": "Neuropeptide CCHamide-1",
+      "organism": "Drosophila melanogaster"
+    },
+    "neuropeptide signaling pathway": {
+      "accession": "O76818",
+      "protein_name": "PBAN-type neuropeptides",
+      "organism": "Agrotis ipsilon"
+    },
+    "neuropeptide signals": {
+      "accession": "Q9VGE8",
+      "protein_name": "Tachykinins",
+      "organism": "Drosophila melanogaster"
+    },
+    "neuropeptides": {
+      "accession": "Q8ITC7",
+      "protein_name": "Neuropeptides capa receptor",
+      "organism": "Drosophila melanogaster"
+    },
+    "neurotransmitters": {
+      "accession": "P45843",
+      "protein_name": "Protein scarlet",
+      "organism": "Drosophila melanogaster"
+    },
+    "other signalling molecules": {
+      "accession": "O18640",
+      "protein_name": "Small ribosomal subunit protein RACK1",
+      "organism": "Drosophila melanogaster"
+    },
+    "pdf-1": {
+      "accession": "O96690",
+      "protein_name": "Protein PDF",
+      "organism": "Drosophila melanogaster"
+    },
+    "pdf-2": {
+      "accession": "Q9W4Y2",
+      "protein_name": "PDF receptor",
+      "organism": "Drosophila melanogaster"
+    },
+    "peptide hormone": {
+      "accession": "Q9VLK4",
+      "protein_name": "Diuretic hormone class 2",
+      "organism": "Drosophila melanogaster"
+    },
+    "peptide hormones": {
+      "accession": "C0HKW2",
+      "protein_name": "Tachykinins",
+      "organism": "Agrotis ipsilon"
+    },
+    "peptidergic": {
+      "accession": "Q1MX22",
+      "protein_name": "FMRFamide-related peptides",
+      "organism": "Bombyx mori"
+    },
+    "peptides": {
+      "accession": "P36193",
+      "protein_name": "Drosocin antimicrobial peptides",
+      "organism": "Drosophila melanogaster"
+    },
+    "periviscerokinin": {
+      "accession": "C0HKS6",
+      "protein_name": "CAPA peptides",
+      "organism": "Agrotis ipsilon"
+    },
+    "phosphatidylserine": {
+      "accession": "Q9VPD3",
+      "protein_name": "Phosphatidylserine synthase",
+      "organism": "Drosophila melanogaster"
+    },
+    "pigment dispersing hormone": {
+      "accession": "Q9W4Y2",
+      "protein_name": "PDF receptor",
+      "organism": "Drosophila melanogaster"
+    },
+    "pigment-dispersing hormone": {
+      "accession": "Q9W4Y2",
+      "protein_name": "PDF receptor",
+      "organism": "Drosophila melanogaster"
+    },
+    "prominin-like": {
+      "accession": "P82295",
+      "protein_name": "Prominin-like protein",
+      "organism": "Drosophila melanogaster"
+    },
+    "regulatory peptides": {
+      "accession": "O01404",
+      "protein_name": "Peptidylglycine alpha-hydroxylating monooxygenase",
+      "organism": "Drosophila melanogaster"
+    },
+    "relaxin": {
+      "accession": "Q9VT53",
+      "protein_name": "Insulin-like peptide 4",
+      "organism": "Drosophila melanogaster"
+    },
+    "spermidine": {
+      "accession": "Q9GU68",
+      "protein_name": "Eukaryotic translation initiation factor 5A",
+      "organism": "Drosophila melanogaster"
+    },
+    "tryptophan": {
+      "accession": "P20351",
+      "protein_name": "Tryptophan 2,3-dioxygenase",
+      "organism": "Drosophila melanogaster"
+    },
+    "tyrosine metabolism pathway": {
+      "accession": "Q86BN8",
+      "protein_name": "Phosphatidylglycerophosphatase and protein-tyrosine phosphatase 1",
+      "organism": "Drosophila melanogaster"
+    },
+    "unpaired 2": {
+      "accession": "Q95RQ4",
+      "protein_name": "3'-5' exonuclease Snipper",
+      "organism": "Drosophila melanogaster"
+    },
+    "vasopressin/oxytocin-type": {
+      "accession": "Q868T3",
+      "protein_name": "Cardioacceleratory peptide receptor",
+      "organism": "Drosophila melanogaster"
+    }
+  }
+}

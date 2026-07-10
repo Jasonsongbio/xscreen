@@ -1,0 +1,68 @@
+# 本文案例配置：飞蝗 SIH 候选神经肽筛选
+#
+# 这是 xscreen 的 proof-of-concept 案例。结果将用于主论文的：
+# - Methods 段（AI-assisted literature synthesis）
+# - Supplementary Table SX（候选排名表）
+# - Results P53 开头（候选来源交代）
+
+study:
+  topic: "starvation-induced hyperactivity"
+  target_species: "Locusta migratoria"
+  reference_species:
+    - "Drosophila melanogaster"
+    - "Bombyx mori"
+    - "Manduca sexta"
+  entity_type: "neuropeptide"
+  behavior: "locomotor"
+
+search:
+  databases: ["PubMed"]
+  use_pubmed: true
+  # pdf_dir: "/path/to/your/reference_pdfs"  # 取消注释并指向你的参考文献 PDF 目录以启用混合模式
+  date_range: [2000, 2026]
+  max_results: 500
+  keywords:
+    intervention: ["starvation", "food deprivation", "fasting"]
+    subject: ["insect", "Drosophila", "locust"]
+    entity: ["neuropeptide", "neuromodulator", "biogenic amine"]
+
+extraction:
+  llm:
+    provider: "deepseek"
+    model: "deepseek-chat"
+    api_key_env: "DEEPSEEK_API_KEY"
+  prompt_file: "prompts/extraction_prompt.txt"
+  evidence_levels:
+    - transcript
+    - peptide
+    - release
+    - functional
+  weights:
+    transcript: 1
+    peptide: 2
+    release: 3
+    functional: 4
+  max_tokens: 4096
+  temperature: 0.0
+
+homolog:
+  method: "BLAST"
+  database: "UniProt"
+  min_identity: 0.4
+  min_coverage: 0.5
+  require_ortholog: false
+
+scoring:
+  min_studies: 2
+  require_consensus: true
+  weight_convergence: 0.5
+  weight_level: 0.5
+  top_n: 20
+
+output:
+  dir: "output"
+  table: "candidates_ranked.xlsx"
+  evidence_detail: "evidence_detail.xlsx"
+  database: "evidence_db.json"
+  report: "report.md"
+  generate_plots: true

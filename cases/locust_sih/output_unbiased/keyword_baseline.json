@@ -1,0 +1,165 @@
+{
+  "description": "Keyword regex baseline vs xscreen LLM extraction",
+  "n_papers": 1349,
+  "n_master_peptides": 77,
+  "baseline_hit_peptides": 54,
+  "baseline_top30": [
+    {
+      "rank": 1,
+      "peptide": "dopamine",
+      "paper_count": 167
+    },
+    {
+      "rank": 2,
+      "peptide": "NPF",
+      "paper_count": 157
+    },
+    {
+      "rank": 3,
+      "peptide": "octopamine",
+      "paper_count": 134
+    },
+    {
+      "rank": 4,
+      "peptide": "PDF",
+      "paper_count": 113
+    },
+    {
+      "rank": 5,
+      "peptide": "AKH",
+      "paper_count": 81
+    },
+    {
+      "rank": 6,
+      "peptide": "tyramine",
+      "paper_count": 68
+    },
+    {
+      "rank": 7,
+      "peptide": "GABA",
+      "paper_count": 65
+    },
+    {
+      "rank": 8,
+      "peptide": "sNPF",
+      "paper_count": 63
+    },
+    {
+      "rank": 9,
+      "peptide": "acetylcholine",
+      "paper_count": 51
+    },
+    {
+      "rank": 10,
+      "peptide": "glutamate",
+      "paper_count": 51
+    },
+    {
+      "rank": 11,
+      "peptide": "Corazonin",
+      "paper_count": 40
+    },
+    {
+      "rank": 12,
+      "peptide": "Tachykinin",
+      "paper_count": 38
+    },
+    {
+      "rank": 13,
+      "peptide": "histamine",
+      "paper_count": 33
+    },
+    {
+      "rank": 14,
+      "peptide": "Sulfakinin",
+      "paper_count": 29
+    },
+    {
+      "rank": 15,
+      "peptide": "Allatotropin",
+      "paper_count": 25
+    },
+    {
+      "rank": 16,
+      "peptide": "SIFamide",
+      "paper_count": 23
+    },
+    {
+      "rank": 17,
+      "peptide": "FMRFamide",
+      "paper_count": 22
+    },
+    {
+      "rank": 18,
+      "peptide": "Allatostatin A",
+      "paper_count": 19
+    },
+    {
+      "rank": 19,
+      "peptide": "DH44",
+      "paper_count": 19
+    },
+    {
+      "rank": 20,
+      "peptide": "CCHamide",
+      "paper_count": 19
+    },
+    {
+      "rank": 21,
+      "peptide": "CAPA",
+      "paper_count": 19
+    },
+    {
+      "rank": 22,
+      "peptide": "Leucokinin",
+      "paper_count": 18
+    },
+    {
+      "rank": 23,
+      "peptide": "MIP",
+      "paper_count": 17
+    },
+    {
+      "rank": 24,
+      "peptide": "DH31",
+      "paper_count": 16
+    },
+    {
+      "rank": 25,
+      "peptide": "Hugin",
+      "paper_count": 14
+    },
+    {
+      "rank": 26,
+      "peptide": "ITP",
+      "paper_count": 13
+    },
+    {
+      "rank": 27,
+      "peptide": "CCAP",
+      "paper_count": 13
+    },
+    {
+      "rank": 28,
+      "peptide": "Pyrokinin",
+      "paper_count": 13
+    },
+    {
+      "rank": 29,
+      "peptide": "Myosuppressin",
+      "paper_count": 13
+    },
+    {
+      "rank": 30,
+      "peptide": "Bursicon",
+      "paper_count": 12
+    }
+  ],
+  "xscreen_only_count": 3,
+  "xscreen_only_sample": [
+    "NPFR",
+    "neuropeptides",
+    "serotonin"
+  ],
+  "overlap_in_top30": 27
+}

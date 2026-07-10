@@ -1,0 +1,59 @@
+{
+  "description": "Merged gold standard for xscreen locust_sih case. Combines 29 review-derived candidates (gold_standard.json) + 8 paper wet-lab candidates (independent of biased corpus, from locust SIH paper qRT-PCR primers, manuscript_r1.md supplementary Table 1). The 8 additions are AT/ALP/CCAP/Dms/ITP/NTL/Orc/PDF - all tested in the paper but absent from the 29-review gold because that gold is Drosophila-centric (AT missing in Drosophila) and NPF-literature-circle-biased.",
+  "merge_date": "2026-07-09",
+  "source_reviews": [
+    {"id": "Nassel2010", "citation": "Nässel & Winther 2010 - Drosophila neuropeptides in regulation of physiology and behavior"},
+    {"id": "Kim2017", "citation": "Kim et al. 2017 - Neuromodulation of innate behaviors in Drosophila"},
+    {"id": "Fadda2019", "citation": "Fadda et al. 2019 - Regulation of feeding and metabolism by NPF and sNPF in invertebrates"}
+  ],
+  "source_paper": {
+    "id": "manuscript_r1",
+    "citation": "Locust NPF1a SIH paper (manuscript_r1.md), supplementary Table 1: 22 neuropeptide qRT-PCR primers",
+    "rationale": "Independent wet-lab source. Does not inherit NPF-literature-circle bias or Drosophila-centric bias. Includes peptides missed by the 29-review gold (AT = allatotropin, absent from Drosophila)."
+  },
+  "relevance_scale": {
+    "high": "directly regulates feeding / metabolism / locomotor / starvation behavior, OR wet-lab validated (Tier 1) in the paper",
+    "medium": "indirectly related (water balance, stress, metabolic coupling), OR tested in paper (Tier 2) with measurable but non-core effect",
+    "low": "other physiological function (ecdysis, diuresis, sensory, etc.)"
+  },
+  "candidates": [
+    {"name": "NPF",           "in_reviews": ["Nassel2010", "Kim2017", "Fadda2019"], "relevance": "high"},
+    {"name": "sNPF",          "in_reviews": ["Nassel2010", "Kim2017", "Fadda2019"], "relevance": "high"},
+    {"name": "AKH",           "in_reviews": ["Nassel2010", "Kim2017"],              "relevance": "high"},
+    {"name": "octopamine",    "in_reviews": ["Kim2017", "Fadda2019"],               "relevance": "high"},
+    {"name": "dopamine",      "in_reviews": ["Kim2017", "Fadda2019"],               "relevance": "high"},
+    {"name": "serotonin",     "in_reviews": ["Kim2017", "Fadda2019"],               "relevance": "high"},
+    {"name": "dILP",          "in_reviews": ["Nassel2010", "Kim2017", "Fadda2019"], "relevance": "high", "aliases": ["insulin", "ILP"]},
+    {"name": "Hugin",         "in_reviews": ["Nassel2010"],                         "relevance": "high"},
+    {"name": "NPY",           "in_reviews": ["Nassel2010", "Kim2017", "Fadda2019"], "relevance": "high"},
+    {"name": "allatostatin",  "in_reviews": ["Nassel2010", "Kim2017"],              "relevance": "high", "aliases": ["ASTA", "ASTC"]},
+    {"name": "CCHamide",      "in_reviews": ["Nassel2010", "Kim2017"],              "relevance": "high"},
+    {"name": "MIP",           "in_reviews": ["Nassel2010", "Kim2017"],              "relevance": "high", "aliases": ["myoinhibitory"]},
+    {"name": "sulfakinin",    "in_reviews": ["Nassel2010", "Kim2017"],              "relevance": "high", "aliases": ["DSK", "drosulfakinin"]},
+    {"name": "tachykinin",    "in_reviews": ["Nassel2010", "Kim2017"],              "relevance": "high", "aliases": ["DTK"]},
+    {"name": "leucokinin",    "in_reviews": ["Nassel2010"],                         "relevance": "medium"},
+    {"name": "corazonin",     "in_reviews": ["Nassel2010", "Kim2017"],              "relevance": "medium", "aliases": ["Crz"]},
+    {"name": "DH31",          "in_reviews": ["Nassel2010", "Kim2017"],              "relevance": "medium"},
+    {"name": "CAPA",          "in_reviews": ["Nassel2010"],                         "relevance": "medium"},
+    {"name": "pyrokinin",     "in_reviews": ["Nassel2010"],                         "relevance": "medium"},
+    {"name": "tyramine",      "in_reviews": ["Kim2017"],                            "relevance": "medium"},
+    {"name": "FMRFamide",     "in_reviews": ["Nassel2010", "Fadda2019"],            "relevance": "low"},
+    {"name": "NPLP1",         "in_reviews": ["Nassel2010"],                         "relevance": "low"},
+    {"name": "SIFamide",      "in_reviews": ["Nassel2010"],                         "relevance": "low", "aliases": ["SIFa"]},
+    {"name": "proctolin",     "in_reviews": ["Nassel2010"],                         "relevance": "low"},
+    {"name": "ETH",           "in_reviews": ["Nassel2010"],                         "relevance": "low"},
+    {"name": "eclosion_hormone", "in_reviews": ["Nassel2010"],                      "relevance": "low"},
+    {"name": "drosokinin",    "in_reviews": ["Nassel2010"],                         "relevance": "low"},
+    {"name": "IFamide",       "in_reviews": ["Nassel2010"],                         "relevance": "low"},
+    {"name": "GABA",          "in_reviews": ["Kim2017"],                            "relevance": "low"},
+
+    {"name": "AT",   "in_reviews": [], "source": "paper_wet_lab_tier1", "relevance": "high",   "aliases": ["allatotropin", "Manse-AT", "Mas-AT", "Mas-allatotropin"]},
+    {"name": "PDF",  "in_reviews": [], "source": "paper_primers_tier2", "relevance": "high",   "aliases": ["pigment-dispersing factor", "pigment-dispersing hormone"]},
+    {"name": "ITP",  "in_reviews": [], "source": "paper_primers_tier2", "relevance": "medium", "aliases": ["ion transport peptide"]},
+    {"name": "NTL",  "in_reviews": [], "source": "paper_primers_tier2", "relevance": "medium", "aliases": ["neurotensin", "neurotensin-like"]},
+    {"name": "Orc",  "in_reviews": [], "source": "paper_primers_tier2", "relevance": "medium", "aliases": ["orcokinin"]},
+    {"name": "ALP",  "in_reviews": [], "source": "paper_primers_tier2", "relevance": "medium", "aliases": ["adipokinetic-like peptide"]},
+    {"name": "CCAP", "in_reviews": [], "source": "paper_primers_tier2", "relevance": "low",    "aliases": ["crustacean cardioactive peptide"]},
+    {"name": "Dms",  "in_reviews": [], "source": "paper_primers_tier2", "relevance": "low",    "aliases": []}
+  ]
+}

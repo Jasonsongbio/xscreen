@@ -1,0 +1,80 @@
+# xscreen 配置模板
+#
+# 复用步骤：
+# 1. 复制此模板到新位置，如 cases/your_study/config.yaml
+# 2. 修改下方 5 个关键字段（study 段）
+# 3. 根据需要调整其他参数（通常默认即可）
+# 4. 运行：python src/run.py cases/your_study/config.yaml
+
+# ============ 核心配置（必改）============
+
+study:
+  topic: ""                    # 研究主题，如 "starvation-induced hyperactivity"
+  target_species: ""           # 目标物种（拉丁名），如 "Locusta migratoria"
+  reference_species: []        # 文献来源物种（模式生物），如 ["Drosophila melanogaster"]
+  entity_type: "neuropeptide"  # 候选分子类型（neuropeptide / TF / kinase / receptor）
+  behavior: ""                 # 关注的行为或表型，如 "locomotor" / "feeding" / "learning"
+
+# ============ 检索策略（通常默认即可）============
+
+search:
+  databases: ["PubMed"]        # 目前仅支持 PubMed，可扩展
+  date_range: [2000, 2026]     # 文献发表年份范围
+  max_results: 500             # 单次检索最大返回数
+  # 关键词组合（留空则自动由 study 字段推导）
+  keywords:
+    intervention: []           # 干预条件，如 ["starvation", "food deprivation", "fasting"]
+    subject: []                # 主体词，如 ["insect", "Drosophila", "locust"]
+    entity: []                 # 候选类型词，如 ["neuropeptide", "neuromodulator"]
+
+# ============ LLM 提取（需要 API）============
+
+extraction:
+  llm: "claude-sonnet-4-6"     # 模型选择
+  api_key_env: "ANTHROPIC_API_KEY"  # API key 环境变量名
+  prompt_file: "prompts/extraction_prompt.txt"  # prompt 模板
+  # 四层证据（固定框架，是工具核心创新之一）
+  evidence_levels:
+    - transcript               # mRNA 表达变化
+    - peptide                  # 肽/蛋白水平变化
+    - release                  # 分泌/释放测量
+    - functional               # 功能丧失或获得（基因操作）
+  # 加权（数值越高权重越大，可调）
+  weights:
+    transcript: 1
+    peptide: 2
+    release: 3
+    functional: 4
+  max_tokens: 4096             # 每次提取最大 token 数
+  temperature: 0.0             # 0 表示确定性输出
+
+# ============ 跨物种同源映射 ============
+
+homolog:
+  method: "BLAST"              # 同源检索方法
+  database: "UniProt"          # 同源数据库
+  min_identity: 0.4            # 最低序列一致性阈值
+  min_coverage: 0.5            # 最低覆盖度阈值
+  # 是否要求目标物种必须有同源（false 则保留但标记 "no ortholog"）
+  require_ortholog: false
+
+# ============ 评分策略 ============
+
+scoring:
+  min_studies: 2               # 候选最少需要独立研究数
+  require_consensus: true      # 是否要求多研究证据一致
+  # 综合评分权重
+  weight_convergence: 0.5      # 证据收敛性权重
+  weight_level: 0.5            # 证据层级权重
+  # 排名阈值（top N 进入最终报告）
+  top_n: 20
+
+# ============ 输出 ============
+
+output:
+  dir: "output"                # 输出目录（相对配置文件位置）
+  table: "candidates_ranked.xlsx"
+  database: "evidence_db.json"
+  report: "report.md"
+  # 是否生成可视化
+  generate_plots: true

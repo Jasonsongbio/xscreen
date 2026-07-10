@@ -1,0 +1,26 @@
+[
+  {
+    "candidate": "NPF",
+    "core_name": "NPF",
+    "candidate_type": "neuropeptide",
+    "species": "Drosophila melanogaster",
+    "evidence_level": "functional",
+    "direction": "down",
+    "behavior_effect": "NPF-RNAi increased locomotor activity",
+    "expression_location": null,
+    "quote": "NPF-RNAi flies displayed significantly higher locomotor activity after 16h starvation",
+    "confidence": 0.95
+  },
+  {
+    "candidate": "NPF",
+    "core_name": "NPF",
+    "candidate_type": "neuropeptide",
+    "species": "Drosophila melanogaster",
+    "evidence_level": "transcript",
+    "direction": "down",
+    "behavior_effect": null,
+    "expression_location": "IPC neurons",
+    "quote": "NPF mRNA decreased by 40% after 24h starvation",
+    "confidence": 0.9
+  }
+]

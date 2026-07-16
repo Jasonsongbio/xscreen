@@ -10,9 +10,9 @@
 | Methods 段落 | Materials and Methods 末尾（LC-MS/MS Analysis 之后）| 独立方法学，与质谱筛选并列 |
 | Results 段落 | Results 3.2（"Screening of neuropeptides..."）末尾 | 作为质谱筛选的独立收敛验证 |
 | Supplementary Table SX | Supplementary Materials | top-30 候选排名表 |
-| Supplementary Fig. S7–S9 | Supplementary Figures | 对应正文 Results 段落 |
+| Supplementary Fig. S7–S10 | Supplementary Figures | 对应正文 Results 段落 |
 
-> 论文现有附图编号到 Fig. S6，xscreen 图接续为 **Fig. S7 / S8 / S9**（如编号有变动请相应调整）。
+> 论文现有附图编号到 Fig. S6，xscreen 图接续为 **Fig. S7 / S8 / S9 / S10**（如编号有变动请相应调整）。
 
 ---
 
@@ -28,7 +28,7 @@ To independently assess whether the neuropeptide candidates identified by LC-MS/
 
 **标题：xscreen literature mining independently supports NPF1a as a lead SIH candidate**
 
-To evaluate whether the NPF1a candidate emerging from neuropeptidomic screening (Fig. 2) is robustly supported by the broader literature, we applied xscreen to an unbiased corpus of 919 publications. NPF ranked first among all neuropeptide candidates (Supplementary Fig. S7; Supplementary Table SX), with convergent evidence drawn from over 150 independent studies and spanning all four evidence levels—transcript, peptide, release, and functional (Supplementary Fig. S8). Under a *Locusta migratoria*-specific lens that restricted analysis to locust-derived evidence, NPF1a ranked sixth, indicating direct experimental support in the target species. To further test the robustness of this ranking against temporal bias, we performed a retrospective analysis using only pre-2015 literature; NPF was already positioned within the top-ranked candidates, and the subsequent literature published between 2016 and 2026 confirmed its central role in starvation-induced behaviors. The reliability of the pipeline was confirmed by seven gold-standard-independent metrics, including 98.7% coverage of a 77-neuropeptide reference list, 93.8% UniProt cross-validation, and 85% bootstrap stability of the top-10 ranking (Supplementary Fig. S9). Collectively, the convergence of proteomic screening (Fig. 2) and computational literature mining provides independent, methodologically orthogonal support for NPF1a as a key regulator of starvation-induced hyperactivity.
+To evaluate whether the NPF1a candidate emerging from neuropeptidomic screening (Fig. 2) is robustly supported by the broader literature, we applied xscreen to an unbiased corpus of 919 publications. NPF ranked first among all neuropeptide candidates (Supplementary Fig. S7; Supplementary Table SX), with convergent evidence drawn from over 150 independent studies and spanning all four evidence levels—transcript, peptide, release, and functional (Supplementary Fig. S8). Under a *Locusta migratoria*-specific lens that restricted analysis to locust-derived evidence, NPF1a ranked sixth, indicating direct experimental support in the target species. To further test the robustness of this ranking against temporal bias, we performed a retrospective analysis using only pre-2015 literature; NPF was already positioned within the top-ranked candidates, and the subsequent literature published between 2016 and 2026 confirmed its central role in starvation-induced behaviors (Supplementary Fig. S10). The reliability of the pipeline was confirmed by seven gold-standard-independent metrics, including 98.7% coverage of a 77-neuropeptide reference list, 93.8% UniProt cross-validation, and 85% bootstrap stability of the top-10 ranking (Supplementary Fig. S9). Collectively, the convergence of proteomic screening (Fig. 2) and computational literature mining provides independent, methodologically orthogonal support for NPF1a as a key regulator of starvation-induced hyperactivity.
 
 ---
 
@@ -53,6 +53,14 @@ Stacked horizontal bars show the number of evidence entries at each experimental
 
 Seven-dimensional validation matrix shown as a radar plot, with each axis representing a metric computed without reliance on a manually curated gold standard: (1) coverage against a 77-neuropeptide reference list, 98.7%; (2) citation faithfulness, 100% (zero hallucinated quotes); (3) UniProt cross-validation of candidate validity, 93.8%; (4) bootstrap split-half stability of the top-10 ranking across 10 random partitions, 85%; (5) LLM extraction increment over a keyword-matching baseline, +28.6 percentage points; (6) cross-corpus robustness, 60% candidate overlap between biased and unbiased corpora (NPF stable at rank 1 in both); and (7) temporal validation, 80% top-10 retention between the 2000–2015 retrospective corpus and the full corpus. The shaded area represents the overall reliability envelope of the pipeline.
 
+### Supplementary Fig. S10. Retrospective prediction analysis: 2000–2015 corpus predicts 2016–2026 research trends.
+
+**(A) Ranking stability scatter plot.** Each point represents one of the top-20 neuropeptide candidates identified by xscreen on the 2000–2015 retrospective corpus (520 papers; x-axis, early rank). The y-axis shows the same candidate's rank in the full 2000–2026 corpus (1,349 papers). The dashed diagonal indicates perfect rank stability; the blue-shaded "Top-10 Stable Zone" (bottom-left) marks candidates that retained top-10 status across both corpora. Point size is proportional to total study count in the full corpus. Blue points: candidates that remained in the top-10; red points: candidates that dropped out of the top-10. NPF (early rank 6 → full rank 2, highlighted) demonstrates that xscreen identified NPF as a lead candidate using only pre-2015 literature. Overall, 8/10 (80%) of the retrospective top-10 were retained in the full corpus top-10.
+
+**(B) Evidence growth between 2016 and 2026.** Stacked horizontal bars show the top-15 candidates ranked by growth ratio (2016–2026 new studies ÷ 2000–2015 studies). Light blue: 2000–2015 study count; dark blue: 2016–2026 new studies. Numbers at bar ends indicate new study count and growth ratio (×). NPF (highlighted) accumulated 62 new studies between 2016 and 2026 (2.3× growth from 28 early studies), the second-highest growth ratio, confirming its central and sustained role in starvation-behavior research. ILP showed the highest growth ratio (2.7×).
+
+This retrospective design provides a temporally independent validation: xscreen's 2000–2015 predictions were prospectively confirmed by the subsequent decade of literature.
+
 ---
 
 ## 图片文件对应
@@ -62,8 +70,9 @@ Seven-dimensional validation matrix shown as a radar plot, with each axis repres
 | Supplementary Fig. S7 | `cases/locust_sih/output_unbiased/figures/fig1_top20_ranking.pdf` | 0 img / 63 paths ✓ |
 | Supplementary Fig. S8 | `cases/locust_sih/output_unbiased/figures/fig2_evidence_levels.pdf` | 0 img / 120 paths ✓ |
 | Supplementary Fig. S9 | `cases/locust_sih/output_unbiased/figures/fig3_validation_radar.pdf` | 0 img / 36 paths ✓ |
+| Supplementary Fig. S10 | `cases/locust_sih/output_unbiased/figures/fig4_retrospective.pdf` | 0 img / 113 paths ✓ |
 
-> 全部 PDF 为纯矢量（pdf.fonttype=42），可在 Adobe Illustrator 中完全编辑。
+> 全部 PDF 为纯矢量（pdf.fonttype=42），可在 Adobe Illustrator 中完全编辑。fig3 第 7 轴（时间稳定性）已改为从 retrospective_analysis.json 动态计算（top-10 保留率），非硬编码。
 
 ---
 

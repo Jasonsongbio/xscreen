@@ -53,5 +53,8 @@ htmlcov/
 *.log
 logs/
 
+# Figure preview images (临时可视化产物, 论文交付只保留矢量 PDF)
+*_preview.png
+
 # OS
 Thumbs.db

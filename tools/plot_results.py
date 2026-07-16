@@ -294,10 +294,19 @@ def figure3_validation_radar(output_path: Path):
         cross_val = shared / max(biased_n, unbiased_n) if max(biased_n, unbiased_n) > 0 else 0
     metrics.append(("Cross-Corpus\nStability", cross_val, f"{cross_val*100:.0f}%"))
 
-    # 7. Temporal stability (2000-2015 retention)
-    # From retrospective analysis: ~80% retention for well-established candidates
-    # Use a representative value from the data
-    retro_val = 0.80  # 80% retention rate for top candidates in historical subset
+    # 7. Temporal stability: 2000-2015 top-10 retention in full corpus (动态)
+    retro_path = DATA_DIR.parent / "output_retrospective" / "retrospective_analysis.json"
+    retro_val = 0.0
+    if retro_path.exists():
+        retro = load_json(retro_path)
+        perf = retro.get("retro_top20_performance", [])
+        # 2000-2015 corpus 的 top-10 候选
+        early_top10 = [c for c in perf if c.get("early_rank", 999) <= 10]
+        if early_top10:
+            # 多少个在全量 corpus 仍保持 top-10
+            retained = sum(1 for c in early_top10
+                           if c.get("full_rank") and c["full_rank"] <= 10)
+            retro_val = retained / len(early_top10)
     metrics.append(("Temporal\nStability", retro_val, f"{retro_val*100:.0f}%"))
 
     # --- Build radar chart ---
@@ -356,6 +365,140 @@ def figure3_validation_radar(output_path: Path):
 
 
 # ======================================================================
+#  Figure 4: Retrospective prediction (2000-2015 → 2016-2026)
+# ======================================================================
+
+def figure4_retrospective(output_path: Path):
+    """回溯性预测可视化：2000-2015 corpus 预测 2016-2026 研究热点。
+
+    Panel A: 排名稳定性散点图（early rank vs full rank），对角线=完美稳定
+    Panel B: 2016-2026 证据增长堆叠柱状图（早期 studies + 新增 studies）
+    """
+    retro_path = DATA_DIR.parent / "output_retrospective" / "retrospective_analysis.json"
+    if not retro_path.exists():
+        print("  [SKIP] Figure 4: retrospective_analysis.json not found")
+        return
+
+    retro = load_json(retro_path)
+    perf = retro.get("retro_top20_performance", [])
+    growth = retro.get("growth_2016_2026", [])
+
+    # 过滤全量未进榜的（full_rank 为 None）
+    perf_valid = [c for c in perf if c.get("full_rank") is not None]
+
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(13, 6),
+                                    gridspec_kw={"width_ratios": [1, 1.2]})
+
+    # === Panel A: 排名稳定性散点图 ===
+    early_ranks = [c["early_rank"] for c in perf_valid]
+    full_ranks = [c["full_rank"] for c in perf_valid]
+    all_studies = [c.get("full_studies", 1) for c in perf_valid]
+
+    # 点大小映射 studies 数
+    max_s = max(all_studies) if all_studies else 1
+    sizes = [60 + (s / max_s) * 420 for s in all_studies]
+
+    # 颜色：top-10 保持 = 蓝，跌出 top-10 = 红
+    colors = ["#2E86AB" if (c["early_rank"] <= 10 and c["full_rank"] <= 10)
+              else "#E84545" for c in perf_valid]
+
+    ax1.scatter(early_ranks, full_ranks, s=sizes, c=colors, alpha=0.75,
+                edgecolors="white", linewidth=1.2, zorder=3)
+
+    # 对角线（完美稳定参考线）
+    lim = max(max(early_ranks), max(full_ranks)) + 2
+    ax1.plot([0, lim], [0, lim], "--", color="gray", alpha=0.5,
+             linewidth=1, zorder=1)
+
+    # top-10 安全区背景（双 top-10 的方形区域）
+    ax1.add_patch(plt.Rectangle((0, 0), 10.5, 10.5, facecolor="#2E86AB",
+                                 alpha=0.07, zorder=0))
+    ax1.text(5.2, 5.2, "Top-10\nStable Zone", ha="center", va="center",
+             fontsize=7, color="#2E86AB", alpha=0.6, zorder=1)
+
+    # 标注关键候选
+    highlight = {"NPF", "dopamine", "octopamine", "serotonin",
+                 "sNPF", "AKH", "FMRFamide", "corazonin"}
+    for c in perf_valid:
+        if c["candidate"] in highlight:
+            # NPF 特别突出
+            fw = "bold" if c["candidate"] == "NPF" else "normal"
+            col = "#1A3A5C" if c["candidate"] == "NPF" else "#444444"
+            ax1.annotate(c["candidate"],
+                         (c["early_rank"], c["full_rank"]),
+                         xytext=(8, 8), textcoords="offset points",
+                         fontsize=8, fontweight=fw, color=col)
+
+    ax1.set_xlabel("Early Rank (2000–2015 corpus, 520 papers)", fontsize=10)
+    ax1.set_ylabel("Full Corpus Rank (2000–2026, 1349 papers)", fontsize=10)
+    ax1.set_title("A. Ranking Stability (Retrospective Prediction)",
+                  fontsize=11, pad=10, loc="left", fontweight="bold")
+    ax1.set_xlim(0, lim)
+    ax1.set_ylim(0, lim)
+    ax1.invert_yaxis()  # rank 1 在顶部
+    ax1.set_xticks([1, 5, 10, 15, 20])
+    ax1.set_yticks([1, 5, 10, 15, 20])
+    ax1.grid(alpha=0.3, linestyle="--")
+
+    # 保持率文字
+    n_top10 = sum(1 for c in perf_valid if c["early_rank"] <= 10)
+    n_retained = sum(1 for c in perf_valid
+                     if c["early_rank"] <= 10 and c["full_rank"] <= 10)
+    ax1.text(0.97, 0.03,
+             f"Top-10 retention: {n_retained}/{n_top10} ({n_retained/n_top10*100:.0f}%)",
+             transform=ax1.transAxes, ha="right", va="bottom",
+             fontsize=8, color="#1A3A5C", fontweight="bold",
+             bbox=dict(boxstyle="round,pad=0.3", facecolor="white",
+                       edgecolor="#2E86AB", linewidth=0.8, alpha=0.9))
+
+    # === Panel B: 2016-2026 证据增长 ===
+    # 取 top-15 按 growth ratio（JSON 里已降序排好）
+    top_growth = growth[:15]
+    names = [c["candidate"] for c in top_growth][::-1]  # 反转：最大在上
+    early_g = [c["early_studies"] for c in top_growth][::-1]
+    late_g = [c["late_new"] for c in top_growth][::-1]
+
+    y_pos = np.arange(len(names))
+
+    # 堆叠：2000-2015（浅蓝）+ 2016-2026 新增（深蓝）
+    ax2.barh(y_pos, early_g, color="#7FBDD8", edgecolor="white",
+             linewidth=0.5, label="2000–2015 studies", height=0.7)
+    ax2.barh(y_pos, late_g, left=early_g, color="#1A3A5C", edgecolor="white",
+             linewidth=0.5, label="2016–2026 new studies", height=0.7)
+
+    # 增长倍数标注
+    for i, (e, l) in enumerate(zip(early_g, late_g)):
+        if e > 0:
+            ratio = l / e
+            total = e + l
+            # NPF 特别突出
+            fw = "bold" if names[i] == "NPF" else "normal"
+            col = "#1A3A5C" if names[i] == "NPF" else "#666666"
+            ax2.text(total + 1.5, y_pos[i], f"+{l} ({ratio:.1f}×)",
+                     va="center", fontsize=7, fontweight=fw, color=col)
+
+    # NPF 标签加粗
+    for tick in ax2.get_yticklabels():
+        if tick.get_text() == "NPF":
+            tick.set_fontweight("bold")
+            tick.set_color("#1A3A5C")
+
+    ax2.set_yticks(y_pos)
+    ax2.set_yticklabels(names, fontsize=8)
+    ax2.set_xlabel("Number of Studies (PubMed corpus)", fontsize=10)
+    ax2.set_title("B. Evidence Growth (2016–2026 Validation)",
+                  fontsize=11, pad=10, loc="left", fontweight="bold")
+    ax2.legend(loc="lower right", fontsize=8, framealpha=0.9,
+               title="Evidence Period", title_fontsize=8)
+    ax2.grid(axis="x", alpha=0.3, linestyle="--")
+
+    plt.tight_layout()
+    fig.savefig(str(output_path), bbox_inches="tight")
+    plt.close()
+    print(f"  [OK] Figure 4 -> {output_path.name}")
+
+
+# ======================================================================
 #  Verification
 # ======================================================================
 
@@ -397,6 +540,12 @@ def main():
     fig3 = out_dir / "fig3_validation_radar.pdf"
     figure3_validation_radar(fig3)
     verify_vector_pdf(fig3)
+
+    # Figure 4: Retrospective prediction
+    fig4 = out_dir / "fig4_retrospective.pdf"
+    figure4_retrospective(fig4)
+    if fig4.exists():
+        verify_vector_pdf(fig4)
 
     print(f"\n=== Done. Output: {out_dir}/ ===")
 
